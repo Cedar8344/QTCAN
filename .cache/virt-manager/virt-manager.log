@@ -1,0 +1,2662 @@
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28769] DEBUG (cli:265) Launched with command line: /usr/share/virt-manager/virt-manager
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28769] DEBUG (virt-manager:185) virt-manager version: 1.5.1
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28769] DEBUG (virt-manager:186) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28774] DEBUG (virt-manager:216) PyGObject version: 3.26.1
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28774] DEBUG (virt-manager:220) GTK version: 3.22.30
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28774] DEBUG (engine:500) libguestfs inspection support: False
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28774] DEBUG (systray:74) Using AppIndicator3 for systray
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28774] DEBUG (systray:156) Showing systray: False
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28774] DEBUG (engine:1038) processing cli command uri= show_window= domain=
+[Sun, 30 Aug 2020 13:43:41 virt-manager 28774] DEBUG (engine:1040) No cli action requested, launching default window
+[Sun, 30 Aug 2020 13:43:42 virt-manager 28774] DEBUG (manager:207) Showing manager
+[Sun, 30 Aug 2020 13:43:42 virt-manager 28774] DEBUG (engine:405) window counter incremented to 1
+[Sun, 30 Aug 2020 13:43:42 virt-manager 28774] DEBUG (engine:159) No stored URIs found.
+[Sun, 30 Aug 2020 13:43:42 virt-manager 28774] DEBUG (engine:141) Initial gtkapplication activated
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (engine:228) Determining default libvirt URI
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (packageutils:39) No PackageKit packages to search for.
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (packageutils:110) Trying to start libvirtd through systemd
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (packageutils:135) libvirtd state='active'
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (packageutils:137) libvirtd already active, not starting
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (connection:602) conn=qemu:///system changed to state=Connecting
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (connection:1019) Scheduling background open thread for qemu:///system
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (connection:602) conn=qemu:///system changed to state=Disconnected
+[Sun, 30 Aug 2020 13:43:43 virt-manager 28774] DEBUG (error:99) error dialog message:
+summary=Unable to connect to libvirt qemu:///system.
+
+Verify that the 'libvirtd' daemon is running.
+details=Unable to connect to libvirt qemu:///system.
+
+Verify that the 'libvirtd' daemon is running.
+
+Libvirt URI is: qemu:///system
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/connection.py", line 1036, in _do_open
+    self._backend.open(self._do_creds_password)
+  File "/usr/share/virt-manager/virtinst/connection.py", line 144, in open
+    open_flags)
+  File "/usr/lib/python2.7/dist-packages/libvirt.py", line 105, in openAuth
+    if ret is None:raise libvirtError('virConnectOpenAuth() failed')
+libvirtError: Failed to connect socket to '/var/run/libvirt/libvirt-sock': Permission denied
+[Sun, 30 Aug 2020 13:43:52 virt-manager 28774] DEBUG (manager:218) Closing manager
+[Sun, 30 Aug 2020 13:43:52 virt-manager 28774] DEBUG (engine:409) window counter decremented to 0
+[Sun, 30 Aug 2020 13:43:52 virt-manager 28774] DEBUG (engine:471) No windows found, requesting app exit
+[Sun, 30 Aug 2020 13:43:52 virt-manager 28774] DEBUG (engine:495) Exiting app normally.
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28792] DEBUG (cli:265) Launched with command line: /usr/share/virt-manager/virt-manager
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28792] DEBUG (virt-manager:185) virt-manager version: 1.5.1
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28792] DEBUG (virt-manager:186) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (virt-manager:216) PyGObject version: 3.26.1
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (virt-manager:220) GTK version: 3.22.30
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (engine:500) libguestfs inspection support: False
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (systray:74) Using AppIndicator3 for systray
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (systray:156) Showing systray: False
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (engine:1038) processing cli command uri= show_window= domain=
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (engine:1040) No cli action requested, launching default window
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (manager:207) Showing manager
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (engine:405) window counter incremented to 1
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (engine:162) Loading stored URIs:
+qemu:///system
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (engine:141) Initial gtkapplication activated
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (connection:602) conn=qemu:///system changed to state=Connecting
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (connection:1019) Scheduling background open thread for qemu:///system
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (connection:1071) libvirt version=4000000
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (connection:1073) daemon version=4000000
+[Sun, 30 Aug 2020 13:43:56 virt-manager 28797] DEBUG (connection:1074) conn version=2011001
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:1076) qemu:///system capabilities:
+<capabilities>
+
+  <host>
+    <uuid>4c4c4544-0035-5410-8052-c2c04f584732</uuid>
+    <cpu>
+      <arch>x86_64</arch>
+      <model>Haswell-noTSX-IBRS</model>
+      <vendor>Intel</vendor>
+      <microcode version="67"/>
+      <topology sockets="1" cores="4" threads="1"/>
+      <feature name="vme"/>
+      <feature name="ds"/>
+      <feature name="acpi"/>
+      <feature name="ss"/>
+      <feature name="ht"/>
+      <feature name="tm"/>
+      <feature name="pbe"/>
+      <feature name="dtes64"/>
+      <feature name="monitor"/>
+      <feature name="ds_cpl"/>
+      <feature name="vmx"/>
+      <feature name="smx"/>
+      <feature name="est"/>
+      <feature name="tm2"/>
+      <feature name="xtpr"/>
+      <feature name="pdcm"/>
+      <feature name="dca"/>
+      <feature name="osxsave"/>
+      <feature name="f16c"/>
+      <feature name="rdrand"/>
+      <feature name="arat"/>
+      <feature name="tsc_adjust"/>
+      <feature name="cmt"/>
+      <feature name="md-clear"/>
+      <feature name="ssbd"/>
+      <feature name="xsaveopt"/>
+      <feature name="pdpe1gb"/>
+      <feature name="abm"/>
+      <feature name="invtsc"/>
+      <pages unit="KiB" size="4"/>
+      <pages unit="KiB" size="2048"/>
+      <pages unit="KiB" size="1048576"/>
+    </cpu>
+    <power_management>
+      <suspend_mem/>
+    </power_management>
+    <migration_features>
+      <live/>
+      <uri_transports>
+        <uri_transport>tcp</uri_transport>
+        <uri_transport>rdma</uri_transport>
+      </uri_transports>
+    </migration_features>
+    <topology>
+      <cells num="1">
+        <cell id="0">
+          <memory unit="KiB">8087128</memory>
+          <pages unit="KiB" size="4">2021782</pages>
+          <pages unit="KiB" size="2048">0</pages>
+          <pages unit="KiB" size="1048576">0</pages>
+          <distances>
+            <sibling id="0" value="10"/>
+          </distances>
+          <cpus num="4">
+            <cpu id="0" socket_id="0" core_id="0" siblings="0"/>
+            <cpu id="1" socket_id="0" core_id="1" siblings="1"/>
+            <cpu id="2" socket_id="0" core_id="2" siblings="2"/>
+            <cpu id="3" socket_id="0" core_id="3" siblings="3"/>
+          </cpus>
+        </cell>
+      </cells>
+    </topology>
+    <cache>
+      <bank id="0" level="3" type="both" size="10" unit="MiB" cpus="0-3"/>
+    </cache>
+    <secmodel>
+      <model>apparmor</model>
+      <doi>0</doi>
+    </secmodel>
+    <secmodel>
+      <model>dac</model>
+      <doi>0</doi>
+      <baselabel type="kvm">+64055:+128</baselabel>
+      <baselabel type="qemu">+64055:+128</baselabel>
+    </secmodel>
+  </host>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="i686">
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-i386</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-i386</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+      <pae/>
+      <nonpae/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="x86_64">
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+    </features>
+  </guest>
+
+</capabilities>
+
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:876) Using domain events
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:913) Using network events
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:933) Using storage pool events
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:952) Using node device events
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:831) storage pool refresh event: pool=default
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:1198) network=default status=Active added
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:1198) pool=default status=Active added
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:1198) interface=lo status=Active added
+[Sun, 30 Aug 2020 13:43:57 virt-manager 28797] DEBUG (connection:602) conn=qemu:///system changed to state=Active
+[Sun, 30 Aug 2020 13:43:59 virt-manager 28797] DEBUG (create:207) Showing new vm wizard
+[Sun, 30 Aug 2020 13:43:59 virt-manager 28797] DEBUG (create:771) Guest type set to os_type=hvm, arch=x86_64, dom_type=kvm
+[Sun, 30 Aug 2020 13:43:59 virt-manager 28797] DEBUG (engine:405) window counter incremented to 2
+[Sun, 30 Aug 2020 13:44:02 virt-manager 28797] DEBUG (storagebrowse:53) Showing storage browser
+[Sun, 30 Aug 2020 13:44:06 virt-manager 28797] DEBUG (config:675) directory for type=isomedia returning=/home/karl
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (config:683) saving directory for type=media to /home/karl/Downloads
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (storagebrowse:170) Browse local chose path=/home/karl/Downloads/ubuntu-18.04.4-desktop-amd64.iso
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (create:2330) Starting OS detection thread for media=/home/karl/Downloads/ubuntu-18.04.4-desktop-amd64.iso
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (storagebrowse:66) Closing storage browser
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (diskbackend:170) Attempting to build pool=Downloads target=/home/karl/Downloads
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (storage:524) Creating storage pool 'Downloads' with xml:
+<pool type="dir">
+  <name>Downloads</name>
+  <target>
+    <path>/home/karl/Downloads</path>
+  </target>
+</pool>
+
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (connection:817) storage pool lifecycle event: storage=Downloads event=0 reason=0
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (connection:817) storage pool lifecycle event: storage=Downloads event=2 reason=0
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (connection:1198) pool=Downloads status=Active added
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (connection:1192) New pool=Downloads requested, but it's already tracked.
+[Sun, 30 Aug 2020 13:44:11 virt-manager 28797] DEBUG (distroinstaller:283) installer.detect_distro returned=ubuntu18.04
+[Sun, 30 Aug 2020 13:44:12 virt-manager 28797] DEBUG (create:2408) Finished UI OS detection.
+[Sun, 30 Aug 2020 13:44:15 virt-manager 28797] DEBUG (guest:251) Setting Guest.os_variant to 'ubuntu18.04'
+[Sun, 30 Aug 2020 13:44:15 virt-manager 28797] DEBUG (create:2147) Recommended resources for variant=ubuntu18.04: {'storage': 16106127360L, 'ram': 2147483648L, 'n-cpus': -1, 'cpu': 1000000000L}
+[Sun, 30 Aug 2020 13:44:37 virt-manager 28797] DEBUG (create:2212) Default storage path is: /var/lib/libvirt/images/ubuntu18.04.qcow2
+[Sun, 30 Aug 2020 13:44:37 virt-manager 28797] DEBUG (devicedisk:409) Creating volume 'ubuntu18.04.qcow2' on pool 'default'
+[Sun, 30 Aug 2020 13:44:37 virt-manager 28797] DEBUG (devicedisk:535) disk.set_vol_install: name=ubuntu18.04.qcow2 poolxml=
+<pool type='dir'>
+  <name>default</name>
+  <uuid>c391da0a-7ca3-44a3-9d52-918b8d7f22c3</uuid>
+  <capacity unit='bytes'>490652508160</capacity>
+  <allocation unit='bytes'>17386446848</allocation>
+  <available unit='bytes'>473266061312</available>
+  <source>
+  </source>
+  <target>
+    <path>/var/lib/libvirt/images</path>
+    <permissions>
+      <mode>0711</mode>
+      <owner>0</owner>
+      <group>0</group>
+    </permissions>
+  </target>
+</pool>
+
+[Sun, 30 Aug 2020 13:44:37 virt-manager 28797] DEBUG (addstorage:278) Using default prefs format=qcow2 for path=/var/lib/libvirt/images/ubuntu18.04.qcow2
+[Sun, 30 Aug 2020 13:44:37 virt-manager 28797] DEBUG (connection:831) storage pool refresh event: pool=default
+[Sun, 30 Aug 2020 13:44:37 virt-manager 28797] DEBUG (connection:831) storage pool refresh event: pool=default
+[Sun, 30 Aug 2020 13:44:39 virt-manager 28797] DEBUG (create:2429) Starting create finish() sequence
+[Sun, 30 Aug 2020 13:44:39 virt-manager 28797] DEBUG (create:2552) Starting background install process
+[Sun, 30 Aug 2020 13:44:39 virt-manager 28797] DEBUG (guest:1150) Using default_graphics=spice
+[Sun, 30 Aug 2020 13:44:39 virt-manager 28797] DEBUG (guest:1169) Local connection, disabling spice image compression.
+[Sun, 30 Aug 2020 13:44:39 virt-manager 28797] DEBUG (storage:809) Creating storage volume 'ubuntu18.04.qcow2' with xml:
+<volume>
+  <name>ubuntu18.04.qcow2</name>
+  <capacity>21474836480</capacity>
+  <allocation>21474836480</allocation>
+  <target>
+    <format type="qcow2"/>
+    <features>
+      <lazy_refcounts/>
+    </features>
+  </target>
+</volume>
+
+[Sun, 30 Aug 2020 13:44:39 virt-manager 28797] DEBUG (storage:840) Using vol create flags=1
+[Sun, 30 Aug 2020 13:44:41 virt-manager 28797] DEBUG (storage:847) Storage volume 'ubuntu18.04.qcow2' install complete.
+[Sun, 30 Aug 2020 13:44:41 virt-manager 28797] DEBUG (guest:384) Generated install XML: 
+<domain type="kvm">
+  <name>ubuntu18.04</name>
+  <uuid>81393d4d-3e5e-4f85-bea8-1603b7275878</uuid>
+  <memory>4194304</memory>
+  <currentMemory>4194304</currentMemory>
+  <vcpu>2</vcpu>
+  <os>
+    <type arch="x86_64">hvm</type>
+    <boot dev="cdrom"/>
+    <boot dev="hd"/>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <vmport state="off"/>
+  </features>
+  <cpu mode="custom" match="exact">
+    <model>Haswell-noTSX-IBRS</model>
+  </cpu>
+  <clock offset="utc">
+    <timer name="rtc" tickpolicy="catchup"/>
+    <timer name="pit" tickpolicy="delay"/>
+    <timer name="hpet" present="no"/>
+  </clock>
+  <on_reboot>destroy</on_reboot>
+  <pm>
+    <suspend-to-mem enabled="no"/>
+    <suspend-to-disk enabled="no"/>
+  </pm>
+  <devices>
+    <emulator>/usr/bin/kvm-spice</emulator>
+    <disk type="file" device="disk">
+      <driver name="qemu" type="qcow2"/>
+      <source file="/var/lib/libvirt/images/ubuntu18.04.qcow2"/>
+      <target dev="vda" bus="virtio"/>
+    </disk>
+    <disk type="file" device="cdrom">
+      <driver name="qemu" type="raw"/>
+      <source file="/home/karl/Downloads/ubuntu-18.04.4-desktop-amd64.iso"/>
+      <target dev="hda" bus="ide"/>
+      <readonly/>
+    </disk>
+    <controller type="usb" index="0" model="ich9-ehci1"/>
+    <controller type="usb" index="0" model="ich9-uhci1">
+      <master startport="0"/>
+    </controller>
+    <controller type="usb" index="0" model="ich9-uhci2">
+      <master startport="2"/>
+    </controller>
+    <controller type="usb" index="0" model="ich9-uhci3">
+      <master startport="4"/>
+    </controller>
+    <interface type="network">
+      <source network="default"/>
+      <mac address="52:54:00:19:e0:57"/>
+      <model type="virtio"/>
+    </interface>
+    <input type="tablet" bus="usb"/>
+    <graphics type="spice" port="-1" tlsPort="-1" autoport="yes">
+      <image compression="off"/>
+    </graphics>
+    <console type="pty"/>
+    <channel type="spicevmc">
+      <target type="virtio" name="com.redhat.spice.0"/>
+    </channel>
+    <sound model="ich6"/>
+    <video>
+      <model type="qxl"/>
+    </video>
+    <redirdev bus="usb" type="spicevmc"/>
+    <redirdev bus="usb" type="spicevmc"/>
+  </devices>
+</domain>
+
+[Sun, 30 Aug 2020 13:44:41 virt-manager 28797] DEBUG (guest:385) Generated boot XML: 
+<domain type="kvm">
+  <name>ubuntu18.04</name>
+  <uuid>81393d4d-3e5e-4f85-bea8-1603b7275878</uuid>
+  <memory>4194304</memory>
+  <currentMemory>4194304</currentMemory>
+  <vcpu>2</vcpu>
+  <os>
+    <type arch="x86_64">hvm</type>
+    <boot dev="hd"/>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <vmport state="off"/>
+  </features>
+  <cpu mode="custom" match="exact">
+    <model>Haswell-noTSX-IBRS</model>
+  </cpu>
+  <clock offset="utc">
+    <timer name="rtc" tickpolicy="catchup"/>
+    <timer name="pit" tickpolicy="delay"/>
+    <timer name="hpet" present="no"/>
+  </clock>
+  <pm>
+    <suspend-to-mem enabled="no"/>
+    <suspend-to-disk enabled="no"/>
+  </pm>
+  <devices>
+    <emulator>/usr/bin/kvm-spice</emulator>
+    <disk type="file" device="disk">
+      <driver name="qemu" type="qcow2"/>
+      <source file="/var/lib/libvirt/images/ubuntu18.04.qcow2"/>
+      <target dev="vda" bus="virtio"/>
+    </disk>
+    <disk type="file" device="cdrom">
+      <target dev="hda" bus="ide"/>
+      <readonly/>
+    </disk>
+    <controller type="usb" index="0" model="ich9-ehci1"/>
+    <controller type="usb" index="0" model="ich9-uhci1">
+      <master startport="0"/>
+    </controller>
+    <controller type="usb" index="0" model="ich9-uhci2">
+      <master startport="2"/>
+    </controller>
+    <controller type="usb" index="0" model="ich9-uhci3">
+      <master startport="4"/>
+    </controller>
+    <interface type="network">
+      <source network="default"/>
+      <mac address="52:54:00:19:e0:57"/>
+      <model type="virtio"/>
+    </interface>
+    <input type="tablet" bus="usb"/>
+    <graphics type="spice" port="-1" tlsPort="-1" autoport="yes">
+      <image compression="off"/>
+    </graphics>
+    <console type="pty"/>
+    <channel type="spicevmc">
+      <target type="virtio" name="com.redhat.spice.0"/>
+    </channel>
+    <sound model="ich6"/>
+    <video>
+      <model type="qxl"/>
+    </video>
+    <redirdev bus="usb" type="spicevmc"/>
+    <redirdev bus="usb" type="spicevmc"/>
+  </devices>
+</domain>
+
+[Sun, 30 Aug 2020 13:44:42 virt-manager 28797] DEBUG (connection:847) node device lifecycle event: device=net_vnet0_fe_54_00_19_e0_57 event=0 reason=0
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=4 reason=0
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=2 reason=0
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=0 reason=0
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (guest:441) XML fetched from libvirt object:
+<domain type='kvm' id='1'>
+  <name>ubuntu18.04</name>
+  <uuid>81393d4d-3e5e-4f85-bea8-1603b7275878</uuid>
+  <memory unit='KiB'>4194304</memory>
+  <currentMemory unit='KiB'>4194304</currentMemory>
+  <vcpu placement='static'>2</vcpu>
+  <resource>
+    <partition>/machine</partition>
+  </resource>
+  <os>
+    <type arch='x86_64' machine='pc-i440fx-bionic'>hvm</type>
+    <boot dev='cdrom'/>
+    <boot dev='hd'/>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <vmport state='off'/>
+  </features>
+  <cpu mode='custom' match='exact' check='full'>
+    <model fallback='forbid'>Haswell-noTSX-IBRS</model>
+    <feature policy='require' name='vme'/>
+    <feature policy='require' name='f16c'/>
+    <feature policy='require' name='rdrand'/>
+    <feature policy='require' name='hypervisor'/>
+    <feature policy='require' name='arat'/>
+    <feature policy='require' name='xsaveopt'/>
+    <feature policy='require' name='abm'/>
+  </cpu>
+  <clock offset='utc'>
+    <timer name='rtc' tickpolicy='catchup'/>
+    <timer name='pit' tickpolicy='delay'/>
+    <timer name='hpet' present='no'/>
+  </clock>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>destroy</on_reboot>
+  <on_crash>destroy</on_crash>
+  <pm>
+    <suspend-to-mem enabled='no'/>
+    <suspend-to-disk enabled='no'/>
+  </pm>
+  <devices>
+    <emulator>/usr/bin/kvm-spice</emulator>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2'/>
+      <source file='/var/lib/libvirt/images/ubuntu18.04.qcow2'/>
+      <backingStore/>
+      <target dev='vda' bus='virtio'/>
+      <alias name='virtio-disk0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x07' function='0x0'/>
+    </disk>
+    <disk type='file' device='cdrom'>
+      <driver name='qemu' type='raw'/>
+      <source file='/home/karl/Downloads/ubuntu-18.04.4-desktop-amd64.iso'/>
+      <backingStore/>
+      <target dev='hda' bus='ide'/>
+      <readonly/>
+      <alias name='ide0-0-0'/>
+      <address type='drive' controller='0' bus='0' target='0' unit='0'/>
+    </disk>
+    <controller type='usb' index='0' model='ich9-ehci1'>
+      <alias name='usb'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x7'/>
+    </controller>
+    <controller type='usb' index='0' model='ich9-uhci1'>
+      <alias name='usb'/>
+      <master startport='0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x0' multifunction='on'/>
+    </controller>
+    <controller type='usb' index='0' model='ich9-uhci2'>
+      <alias name='usb'/>
+      <master startport='2'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x1'/>
+    </controller>
+    <controller type='usb' index='0' model='ich9-uhci3'>
+      <alias name='usb'/>
+      <master startport='4'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x2'/>
+    </controller>
+    <controller type='pci' index='0' model='pci-root'>
+      <alias name='pci.0'/>
+    </controller>
+    <controller type='ide' index='0'>
+      <alias name='ide'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x1'/>
+    </controller>
+    <controller type='virtio-serial' index='0'>
+      <alias name='virtio-serial0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x06' function='0x0'/>
+    </controller>
+    <interface type='network'>
+      <mac address='52:54:00:19:e0:57'/>
+      <source network='default' bridge='virbr0'/>
+      <target dev='vnet0'/>
+      <model type='virtio'/>
+      <alias name='net0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0'/>
+    </interface>
+    <serial type='pty'>
+      <source path='/dev/pts/5'/>
+      <target type='isa-serial' port='0'>
+        <model name='isa-serial'/>
+      </target>
+      <alias name='serial0'/>
+    </serial>
+    <console type='pty' tty='/dev/pts/5'>
+      <source path='/dev/pts/5'/>
+      <target type='serial' port='0'/>
+      <alias name='serial0'/>
+    </console>
+    <channel type='spicevmc'>
+      <target type='virtio' name='com.redhat.spice.0' state='disconnected'/>
+      <alias name='channel0'/>
+      <address type='virtio-serial' controller='0' bus='0' port='1'/>
+    </channel>
+    <input type='tablet' bus='usb'>
+      <alias name='input0'/>
+      <address type='usb' bus='0' port='1'/>
+    </input>
+    <input type='mouse' bus='ps2'>
+      <alias name='input1'/>
+    </input>
+    <input type='keyboard' bus='ps2'>
+      <alias name='input2'/>
+    </input>
+    <graphics type='spice' port='5900' autoport='yes' listen='127.0.0.1'>
+      <listen type='address' address='127.0.0.1'/>
+      <image compression='off'/>
+    </graphics>
+    <sound model='ich6'>
+      <alias name='sound0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x04' function='0x0'/>
+    </sound>
+    <video>
+      <model type='qxl' ram='65536' vram='65536' vgamem='16384' heads='1' primary='yes'/>
+      <alias name='video0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x0'/>
+    </video>
+    <redirdev bus='usb' type='spicevmc'>
+      <alias name='redir0'/>
+      <address type='usb' bus='0' port='2'/>
+    </redirdev>
+    <redirdev bus='usb' type='spicevmc'>
+      <alias name='redir1'/>
+      <address type='usb' bus='0' port='3'/>
+    </redirdev>
+    <memballoon model='virtio'>
+      <alias name='balloon0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x08' function='0x0'/>
+    </memballoon>
+  </devices>
+  <seclabel type='dynamic' model='apparmor' relabel='yes'>
+    <label>libvirt-81393d4d-3e5e-4f85-bea8-1603b7275878</label>
+    <imagelabel>libvirt-81393d4d-3e5e-4f85-bea8-1603b7275878</imagelabel>
+  </seclabel>
+  <seclabel type='dynamic' model='dac' relabel='yes'>
+    <label>+64055:+128</label>
+    <imagelabel>+64055:+128</imagelabel>
+  </seclabel>
+</domain>
+
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (create:2554) Install completed
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (connection:1198) domain=ubuntu18.04 status=Running added
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (connection:1192) New domain=ubuntu18.04 requested, but it's already tracked.
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (connection:831) storage pool refresh event: pool=default
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (create:218) Closing new vm wizard
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (engine:409) window counter decremented to 1
+[Sun, 30 Aug 2020 13:44:44 virt-manager 28797] DEBUG (serialcon:37) Using VTE API 2.91
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (engine:405) window counter incremented to 2
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (console:721) Starting connect process for proto=spice trans= connhost=127.0.0.1 connuser= connport= gaddr=127.0.0.1 gport=5900 gtlsport=None gsocket=None
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.UsbredirChannel object at 0x7f2222093a00 (SpiceUsbredirChannel at 0x55e7d4e05e50)>
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.UsbredirChannel object at 0x7f2222093a00 (SpiceUsbredirChannel at 0x55e7d4e08b60)>
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.RecordChannel object at 0x7f2222093a00 (SpiceRecordChannel at 0x55e7d4dd2510)>
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.PlaybackChannel object at 0x7f2222093a00 (SpicePlaybackChannel at 0x55e7d4e0acd0)>
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.DisplayChannel object at 0x7f2222093a00 (SpiceDisplayChannel at 0x55e7d4e1a620)>
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (console:844) Viewer connected
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.CursorChannel object at 0x7f222209ac30 (SpiceCursorChannel at 0x55e7d4fb5220)>
+[Sun, 30 Aug 2020 13:44:45 virt-manager 28797] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.InputsChannel object at 0x7f222209adc0 (SpiceInputsChannel at 0x55e7d4fad220)>
+[Sun, 30 Aug 2020 13:56:21 virt-manager 28797] DEBUG (connection:775) domain xmlmisc event: domain=ubuntu18.04 args=('drive-ide0-0-0', 0, None) 
+[Sun, 30 Aug 2020 13:56:23 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=6 reason=1
+[Sun, 30 Aug 2020 13:56:29 virt-manager 28797] DEBUG (connection:847) node device lifecycle event: device=net_vnet0_fe_54_00_19_e0_57 event=1 reason=0
+[Sun, 30 Aug 2020 13:56:34 virt-manager 28797] DEBUG (console:835) Viewer disconnected
+[Sun, 30 Aug 2020 13:56:41 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=5 reason=0
+[Sun, 30 Aug 2020 13:56:41 virt-manager 28797] DEBUG (create:2616) Install should be completed, starting VM.
+[Sun, 30 Aug 2020 13:56:49 virt-manager 28797] DEBUG (connection:847) node device lifecycle event: device=net_vnet0_fe_54_00_19_e0_57 event=0 reason=0
+[Sun, 30 Aug 2020 13:56:49 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=4 reason=0
+[Sun, 30 Aug 2020 13:56:49 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=2 reason=0
+[Sun, 30 Aug 2020 13:56:49 virt-manager 28797] DEBUG (details:682) Closing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:56:49 virt-manager 28797] DEBUG (engine:409) window counter decremented to 1
+[Sun, 30 Aug 2020 13:56:49 virt-manager 28797] DEBUG (connection:1159) nodedev=net_vnet0_fe_54_00_19_e0_57 removed
+[Sun, 30 Aug 2020 13:56:50 virt-manager 28797] DEBUG (cli:258) Uncaught exception:
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+
+[Sun, 30 Aug 2020 13:56:50 virt-manager 28797] DEBUG (cli:258) Uncaught exception:
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+
+[Sun, 30 Aug 2020 13:56:54 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:56:54 virt-manager 28797] DEBUG (engine:405) window counter incremented to 2
+[Sun, 30 Aug 2020 13:56:54 virt-manager 28797] DEBUG (error:99) error dialog message:
+summary=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+details=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/engine.py", line 830, in _show_vm_helper
+    details.show()
+  File "/usr/share/virt-manager/virtManager/details.py", line 653, in show
+    self.refresh_vm_state()
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+[Sun, 30 Aug 2020 13:57:11 virt-manager 28797] DEBUG (engine:1225) Rebooting vm 'ubuntu18.04'
+[Sun, 30 Aug 2020 13:57:17 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:57:17 virt-manager 28797] DEBUG (engine:405) window counter incremented to 3
+[Sun, 30 Aug 2020 13:57:17 virt-manager 28797] DEBUG (error:99) error dialog message:
+summary=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+details=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/engine.py", line 830, in _show_vm_helper
+    details.show()
+  File "/usr/share/virt-manager/virtManager/details.py", line 653, in show
+    self.refresh_vm_state()
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+[Sun, 30 Aug 2020 13:57:30 virt-manager 28797] DEBUG (create:207) Showing new vm wizard
+[Sun, 30 Aug 2020 13:57:30 virt-manager 28797] DEBUG (create:771) Guest type set to os_type=hvm, arch=x86_64, dom_type=kvm
+[Sun, 30 Aug 2020 13:57:31 virt-manager 28797] DEBUG (engine:405) window counter incremented to 4
+[Sun, 30 Aug 2020 13:57:31 virt-manager 28797] DEBUG (connection:831) storage pool refresh event: pool=default
+[Sun, 30 Aug 2020 13:57:31 virt-manager 28797] DEBUG (connection:831) storage pool refresh event: pool=default
+[Sun, 30 Aug 2020 13:57:33 virt-manager 28797] DEBUG (create:218) Closing new vm wizard
+[Sun, 30 Aug 2020 13:57:33 virt-manager 28797] DEBUG (engine:409) window counter decremented to 3
+[Sun, 30 Aug 2020 13:57:36 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:57:36 virt-manager 28797] DEBUG (engine:405) window counter incremented to 4
+[Sun, 30 Aug 2020 13:57:36 virt-manager 28797] DEBUG (error:99) error dialog message:
+summary=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+details=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/engine.py", line 830, in _show_vm_helper
+    details.show()
+  File "/usr/share/virt-manager/virtManager/details.py", line 653, in show
+    self.refresh_vm_state()
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+[Sun, 30 Aug 2020 13:57:43 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:57:43 virt-manager 28797] DEBUG (engine:405) window counter incremented to 5
+[Sun, 30 Aug 2020 13:57:43 virt-manager 28797] DEBUG (error:99) error dialog message:
+summary=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+details=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/engine.py", line 830, in _show_vm_helper
+    details.show()
+  File "/usr/share/virt-manager/virtManager/details.py", line 653, in show
+    self.refresh_vm_state()
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+[Sun, 30 Aug 2020 13:57:56 virt-manager 28797] DEBUG (engine:1134) Destroying vm 'ubuntu18.04'
+[Sun, 30 Aug 2020 13:57:56 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=5 reason=1
+[Sun, 30 Aug 2020 13:57:56 virt-manager 28797] DEBUG (connection:847) node device lifecycle event: device=net_vnet0_fe_54_00_19_e0_57 event=1 reason=0
+[Sun, 30 Aug 2020 13:57:56 virt-manager 28797] DEBUG (cli:258) Uncaught exception:
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+
+[Sun, 30 Aug 2020 13:57:56 virt-manager 28797] DEBUG (connection:1159) nodedev=net_vnet0_fe_54_00_19_e0_57 removed
+[Sun, 30 Aug 2020 13:57:58 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:57:58 virt-manager 28797] DEBUG (engine:405) window counter incremented to 6
+[Sun, 30 Aug 2020 13:57:58 virt-manager 28797] DEBUG (error:99) error dialog message:
+summary=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+details=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/engine.py", line 830, in _show_vm_helper
+    details.show()
+  File "/usr/share/virt-manager/virtManager/details.py", line 653, in show
+    self.refresh_vm_state()
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+[Sun, 30 Aug 2020 13:58:07 virt-manager 28797] DEBUG (engine:1164) Starting vm 'ubuntu18.04'
+[Sun, 30 Aug 2020 13:58:08 virt-manager 28797] DEBUG (connection:847) node device lifecycle event: device=net_vnet0_fe_54_00_19_e0_57 event=0 reason=0
+[Sun, 30 Aug 2020 13:58:08 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=4 reason=0
+[Sun, 30 Aug 2020 13:58:08 virt-manager 28797] DEBUG (cli:258) Uncaught exception:
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+
+[Sun, 30 Aug 2020 13:58:08 virt-manager 28797] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=2 reason=0
+[Sun, 30 Aug 2020 13:58:08 virt-manager 28797] DEBUG (cli:258) Uncaught exception:
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+
+[Sun, 30 Aug 2020 13:58:10 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:58:10 virt-manager 28797] DEBUG (engine:405) window counter incremented to 7
+[Sun, 30 Aug 2020 13:58:10 virt-manager 28797] DEBUG (error:99) error dialog message:
+summary=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+details=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/engine.py", line 830, in _show_vm_helper
+    details.show()
+  File "/usr/share/virt-manager/virtManager/details.py", line 653, in show
+    self.refresh_vm_state()
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+[Sun, 30 Aug 2020 13:59:02 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:59:04 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:59:20 virt-manager 28797] DEBUG (manager:218) Closing manager
+[Sun, 30 Aug 2020 13:59:20 virt-manager 28797] DEBUG (engine:409) window counter decremented to 6
+[Sun, 30 Aug 2020 13:59:31 virt-manager 29556] DEBUG (cli:265) Launched with command line: /usr/share/virt-manager/virt-manager
+[Sun, 30 Aug 2020 13:59:31 virt-manager 29556] DEBUG (virt-manager:185) virt-manager version: 1.5.1
+[Sun, 30 Aug 2020 13:59:31 virt-manager 29556] DEBUG (virt-manager:186) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[Sun, 30 Aug 2020 13:59:31 virt-manager 29561] DEBUG (virt-manager:216) PyGObject version: 3.26.1
+[Sun, 30 Aug 2020 13:59:31 virt-manager 29561] DEBUG (virt-manager:220) GTK version: 3.22.30
+[Sun, 30 Aug 2020 13:59:32 virt-manager 29561] DEBUG (engine:500) libguestfs inspection support: False
+[Sun, 30 Aug 2020 13:59:32 virt-manager 29561] DEBUG (systray:74) Using AppIndicator3 for systray
+[Sun, 30 Aug 2020 13:59:32 virt-manager 29561] DEBUG (systray:156) Showing systray: False
+[Sun, 30 Aug 2020 13:59:32 virt-manager 29561] DEBUG (engine:180) Connected to remote app instance.
+[Sun, 30 Aug 2020 13:59:32 virt-manager 28797] DEBUG (engine:1038) processing cli command uri= show_window= domain=
+[Sun, 30 Aug 2020 13:59:32 virt-manager 28797] DEBUG (engine:1040) No cli action requested, launching default window
+[Sun, 30 Aug 2020 13:59:32 virt-manager 28797] DEBUG (manager:207) Showing manager
+[Sun, 30 Aug 2020 13:59:32 virt-manager 28797] DEBUG (engine:405) window counter incremented to 7
+[Sun, 30 Aug 2020 13:59:37 virt-manager 28797] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f22304c0140>
+[Sun, 30 Aug 2020 13:59:37 virt-manager 28797] DEBUG (engine:405) window counter incremented to 8
+[Sun, 30 Aug 2020 13:59:37 virt-manager 28797] DEBUG (error:99) error dialog message:
+summary=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+details=Error launching details: 'NoneType' object has no attribute 'change_run_text'
+
+Traceback (most recent call last):
+  File "/usr/share/virt-manager/virtManager/engine.py", line 830, in _show_vm_helper
+    details.show()
+  File "/usr/share/virt-manager/virtManager/details.py", line 653, in show
+    self.refresh_vm_state()
+  File "/usr/share/virt-manager/virtManager/details.py", line 1316, in refresh_vm_state
+    self.change_run_text(vm.has_managed_save())
+  File "/usr/share/virt-manager/virtManager/details.py", line 1299, in change_run_text
+    self.widget("details-vm-menu").get_submenu().change_run_text(text)
+AttributeError: 'NoneType' object has no attribute 'change_run_text'
+[Sun, 30 Aug 2020 14:02:24 virt-manager 1970] DEBUG (cli:265) Launched with command line: /usr/share/virt-manager/virt-manager
+[Sun, 30 Aug 2020 14:02:24 virt-manager 1970] DEBUG (virt-manager:185) virt-manager version: 1.5.1
+[Sun, 30 Aug 2020 14:02:24 virt-manager 1970] DEBUG (virt-manager:186) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[Sun, 30 Aug 2020 14:02:25 virt-manager 1975] DEBUG (virt-manager:216) PyGObject version: 3.26.1
+[Sun, 30 Aug 2020 14:02:25 virt-manager 1975] DEBUG (virt-manager:220) GTK version: 3.22.30
+[Sun, 30 Aug 2020 14:02:25 virt-manager 1975] DEBUG (engine:500) libguestfs inspection support: False
+[Sun, 30 Aug 2020 14:02:25 virt-manager 1975] DEBUG (systray:74) Using AppIndicator3 for systray
+[Sun, 30 Aug 2020 14:02:25 virt-manager 1975] DEBUG (systray:156) Showing systray: False
+[Sun, 30 Aug 2020 14:02:25 virt-manager 1975] DEBUG (engine:1038) processing cli command uri= show_window= domain=
+[Sun, 30 Aug 2020 14:02:25 virt-manager 1975] DEBUG (engine:1040) No cli action requested, launching default window
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (manager:207) Showing manager
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (engine:405) window counter incremented to 1
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (engine:162) Loading stored URIs:
+qemu:///system
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (engine:141) Initial gtkapplication activated
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:602) conn=qemu:///system changed to state=Connecting
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:1019) Scheduling background open thread for qemu:///system
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:1071) libvirt version=4000000
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:1073) daemon version=4000000
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:1074) conn version=2011001
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:1076) qemu:///system capabilities:
+<capabilities>
+
+  <host>
+    <uuid>4c4c4544-0035-5410-8052-c2c04f584732</uuid>
+    <cpu>
+      <arch>x86_64</arch>
+      <model>Haswell-noTSX-IBRS</model>
+      <vendor>Intel</vendor>
+      <microcode version="67"/>
+      <topology sockets="1" cores="4" threads="1"/>
+      <feature name="vme"/>
+      <feature name="ds"/>
+      <feature name="acpi"/>
+      <feature name="ss"/>
+      <feature name="ht"/>
+      <feature name="tm"/>
+      <feature name="pbe"/>
+      <feature name="dtes64"/>
+      <feature name="monitor"/>
+      <feature name="ds_cpl"/>
+      <feature name="vmx"/>
+      <feature name="smx"/>
+      <feature name="est"/>
+      <feature name="tm2"/>
+      <feature name="xtpr"/>
+      <feature name="pdcm"/>
+      <feature name="dca"/>
+      <feature name="osxsave"/>
+      <feature name="f16c"/>
+      <feature name="rdrand"/>
+      <feature name="arat"/>
+      <feature name="tsc_adjust"/>
+      <feature name="cmt"/>
+      <feature name="md-clear"/>
+      <feature name="ssbd"/>
+      <feature name="xsaveopt"/>
+      <feature name="pdpe1gb"/>
+      <feature name="abm"/>
+      <feature name="invtsc"/>
+      <pages unit="KiB" size="4"/>
+      <pages unit="KiB" size="2048"/>
+      <pages unit="KiB" size="1048576"/>
+    </cpu>
+    <power_management>
+      <suspend_mem/>
+      <suspend_disk/>
+      <suspend_hybrid/>
+    </power_management>
+    <migration_features>
+      <live/>
+      <uri_transports>
+        <uri_transport>tcp</uri_transport>
+        <uri_transport>rdma</uri_transport>
+      </uri_transports>
+    </migration_features>
+    <topology>
+      <cells num="1">
+        <cell id="0">
+          <memory unit="KiB">8087136</memory>
+          <pages unit="KiB" size="4">2021784</pages>
+          <pages unit="KiB" size="2048">0</pages>
+          <pages unit="KiB" size="1048576">0</pages>
+          <distances>
+            <sibling id="0" value="10"/>
+          </distances>
+          <cpus num="4">
+            <cpu id="0" socket_id="0" core_id="0" siblings="0"/>
+            <cpu id="1" socket_id="0" core_id="1" siblings="1"/>
+            <cpu id="2" socket_id="0" core_id="2" siblings="2"/>
+            <cpu id="3" socket_id="0" core_id="3" siblings="3"/>
+          </cpus>
+        </cell>
+      </cells>
+    </topology>
+    <cache>
+      <bank id="0" level="3" type="both" size="10" unit="MiB" cpus="0-3"/>
+    </cache>
+    <secmodel>
+      <model>apparmor</model>
+      <doi>0</doi>
+    </secmodel>
+    <secmodel>
+      <model>dac</model>
+      <doi>0</doi>
+      <baselabel type="kvm">+64055:+128</baselabel>
+      <baselabel type="qemu">+64055:+128</baselabel>
+    </secmodel>
+  </host>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="i686">
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-i386</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-i386</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+      <pae/>
+      <nonpae/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="x86_64">
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+    </features>
+  </guest>
+
+</capabilities>
+
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:876) Using domain events
+[Sun, 30 Aug 2020 14:02:26 virt-manager 1975] DEBUG (connection:913) Using network events
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:933) Using storage pool events
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:952) Using node device events
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:1198) network=default status=Active added
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:831) storage pool refresh event: pool=default
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:1198) domain=ubuntu18.04 status=Shutoff added
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:831) storage pool refresh event: pool=Downloads
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:1198) pool=default status=Active added
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:1198) interface=lo status=Active added
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:1198) pool=Downloads status=Active added
+[Sun, 30 Aug 2020 14:02:27 virt-manager 1975] DEBUG (connection:602) conn=qemu:///system changed to state=Active
+[Sun, 30 Aug 2020 14:02:30 virt-manager 1975] DEBUG (serialcon:37) Using VTE API 2.91
+[Sun, 30 Aug 2020 14:02:30 virt-manager 1975] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f90f5685b90>
+[Sun, 30 Aug 2020 14:02:31 virt-manager 1975] DEBUG (engine:405) window counter incremented to 2
+[Sun, 30 Aug 2020 14:02:34 virt-manager 1975] DEBUG (engine:1164) Starting vm 'ubuntu18.04'
+[Sun, 30 Aug 2020 14:02:35 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=net_vnet0_fe_54_00_19_e0_57 event=0 reason=0
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=4 reason=0
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (console:721) Starting connect process for proto=spice trans= connhost=127.0.0.1 connuser= connport= gaddr=127.0.0.1 gport=5900 gtlsport=None gsocket=None
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=2 reason=0
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.UsbredirChannel object at 0x7f90f5548870 (SpiceUsbredirChannel at 0x5565be08bf30)>
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.UsbredirChannel object at 0x7f90f5548870 (SpiceUsbredirChannel at 0x5565be082e90)>
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.RecordChannel object at 0x7f90f5548870 (SpiceRecordChannel at 0x5565be092230)>
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.PlaybackChannel object at 0x7f90f5548870 (SpicePlaybackChannel at 0x5565be077e80)>
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.DisplayChannel object at 0x7f90f5548870 (SpiceDisplayChannel at 0x5565bd73a4f0)>
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (console:844) Viewer connected
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.CursorChannel object at 0x7f90f55a9aa0 (SpiceCursorChannel at 0x5565be19aa20)>
+[Sun, 30 Aug 2020 14:02:38 virt-manager 1975] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.InputsChannel object at 0x7f90f558bd70 (SpiceInputsChannel at 0x5565bd85f820)>
+[Sun, 30 Aug 2020 14:04:38 virt-manager 1975] DEBUG (preferences:97) Showing preferences
+[Sun, 30 Aug 2020 14:04:47 virt-manager 1975] DEBUG (preferences:92) Closing preferences
+[Sun, 30 Aug 2020 14:04:50 virt-manager 1975] DEBUG (host:254) Showing host details: <connection.vmmConnection object at 0x7f90fc2fb8c0 (virtManager+connection+vmmConnection at 0x5565bd63be40)>
+[Sun, 30 Aug 2020 14:04:50 virt-manager 1975] DEBUG (engine:405) window counter incremented to 3
+[Sun, 30 Aug 2020 14:05:06 virt-manager 1975] DEBUG (host:422) Launching 'Add Network'
+[Sun, 30 Aug 2020 14:05:06 virt-manager 1975] DEBUG (createnet:104) Showing new network wizard
+[Sun, 30 Aug 2020 14:05:29 virt-manager 1975] DEBUG (createnet:110) Closing new network wizard
+[Sun, 30 Aug 2020 14:05:35 virt-manager 1975] DEBUG (host:266) Closing host details: <connection.vmmConnection object at 0x7f90fc2fb8c0 (virtManager+connection+vmmConnection at 0x5565bd63be40)>
+[Sun, 30 Aug 2020 14:05:35 virt-manager 1975] DEBUG (engine:409) window counter decremented to 2
+[Sun, 30 Aug 2020 14:05:38 virt-manager 1975] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f90f5685b90>
+[Sun, 30 Aug 2020 14:05:47 virt-manager 1975] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f90f5685b90>
+[Sun, 30 Aug 2020 14:09:47 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=net_can0 event=1 reason=0
+[Sun, 30 Aug 2020 14:09:47 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=usb_3_2_1_0 event=1 reason=0
+[Sun, 30 Aug 2020 14:09:47 virt-manager 1975] DEBUG (connection:1159) nodedev=usb_3_2_1_0 removed
+[Sun, 30 Aug 2020 14:09:47 virt-manager 1975] DEBUG (connection:1159) nodedev=net_can0 removed
+[Sun, 30 Aug 2020 14:09:47 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=usb_3_2 event=1 reason=0
+[Sun, 30 Aug 2020 14:09:47 virt-manager 1975] DEBUG (connection:1159) nodedev=usb_3_2 removed
+[Sun, 30 Aug 2020 14:09:49 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=usb_3_2 event=0 reason=0
+[Sun, 30 Aug 2020 14:09:49 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=usb_3_2_1_0 event=0 reason=0
+[Sun, 30 Aug 2020 14:09:49 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=net_can0 event=0 reason=0
+[Sun, 30 Aug 2020 14:09:49 virt-manager 1975] DEBUG (connection:1192) New nodedev=usb_3_2 requested, but it's already tracked.
+[Sun, 30 Aug 2020 14:09:49 virt-manager 1975] DEBUG (connection:1192) New nodedev=net_can0 requested, but it's already tracked.
+[Sun, 30 Aug 2020 14:11:45 virt-manager 1975] DEBUG (connection:847) node device lifecycle event: device=net_can0 event=1 reason=0
+[Sun, 30 Aug 2020 14:11:45 virt-manager 1975] DEBUG (connection:1159) nodedev=net_can0 removed
+[Sun, 30 Aug 2020 14:28:42 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Sun, 30 Aug 2020 14:28:56 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Sun, 30 Aug 2020 14:30:53 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Sun, 30 Aug 2020 22:58:36 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Sun, 30 Aug 2020 23:01:58 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Sun, 30 Aug 2020 23:17:50 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Sun, 30 Aug 2020 23:19:30 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Mon, 31 Aug 2020 11:47:54 virt-manager 1975] DEBUG (connection:856) node device update event: device=drm_card0
+[Mon, 31 Aug 2020 11:50:39 virt-manager 1975] DEBUG (manager:218) Closing manager
+[Mon, 31 Aug 2020 11:50:39 virt-manager 1975] DEBUG (engine:409) window counter decremented to 1
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (details:682) Closing VM details: <vmmDomain name=ubuntu18.04 id=0x7f90f5685b90>
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (engine:409) window counter decremented to 0
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (engine:471) No windows found, requesting app exit
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (preferences:92) Closing preferences
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (host:266) Closing host details: <connection.vmmConnection object at 0x7f90fc2fb8c0 (virtManager+connection+vmmConnection at 0x5565bd63be40)>
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (createnet:110) Closing new network wizard
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (connection:968) conn.close() uri=qemu:///system
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (connection:602) conn=qemu:///system changed to state=Disconnected
+[Mon, 31 Aug 2020 11:50:53 virt-manager 1975] DEBUG (engine:495) Exiting app normally.
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14645] DEBUG (cli:265) Launched with command line: /usr/share/virt-manager/virt-manager
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14645] DEBUG (virt-manager:185) virt-manager version: 1.5.1
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14645] DEBUG (virt-manager:186) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14650] DEBUG (virt-manager:216) PyGObject version: 3.26.1
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14650] DEBUG (virt-manager:220) GTK version: 3.22.30
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14650] DEBUG (engine:500) libguestfs inspection support: False
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14650] DEBUG (systray:74) Using AppIndicator3 for systray
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14650] DEBUG (systray:156) Showing systray: False
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14650] DEBUG (engine:1038) processing cli command uri= show_window= domain=
+[Mon, 31 Aug 2020 13:03:35 virt-manager 14650] DEBUG (engine:1040) No cli action requested, launching default window
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (manager:207) Showing manager
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (engine:405) window counter incremented to 1
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (engine:162) Loading stored URIs:
+qemu:///system
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (engine:141) Initial gtkapplication activated
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:602) conn=qemu:///system changed to state=Connecting
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1019) Scheduling background open thread for qemu:///system
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1071) libvirt version=4000000
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1073) daemon version=4000000
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1074) conn version=2011001
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1076) qemu:///system capabilities:
+<capabilities>
+
+  <host>
+    <uuid>4c4c4544-0035-5410-8052-c2c04f584732</uuid>
+    <cpu>
+      <arch>x86_64</arch>
+      <model>Haswell-noTSX-IBRS</model>
+      <vendor>Intel</vendor>
+      <microcode version="67"/>
+      <topology sockets="1" cores="4" threads="1"/>
+      <feature name="vme"/>
+      <feature name="ds"/>
+      <feature name="acpi"/>
+      <feature name="ss"/>
+      <feature name="ht"/>
+      <feature name="tm"/>
+      <feature name="pbe"/>
+      <feature name="dtes64"/>
+      <feature name="monitor"/>
+      <feature name="ds_cpl"/>
+      <feature name="vmx"/>
+      <feature name="smx"/>
+      <feature name="est"/>
+      <feature name="tm2"/>
+      <feature name="xtpr"/>
+      <feature name="pdcm"/>
+      <feature name="dca"/>
+      <feature name="osxsave"/>
+      <feature name="f16c"/>
+      <feature name="rdrand"/>
+      <feature name="arat"/>
+      <feature name="tsc_adjust"/>
+      <feature name="cmt"/>
+      <feature name="md-clear"/>
+      <feature name="ssbd"/>
+      <feature name="xsaveopt"/>
+      <feature name="pdpe1gb"/>
+      <feature name="abm"/>
+      <feature name="invtsc"/>
+      <pages unit="KiB" size="4"/>
+      <pages unit="KiB" size="2048"/>
+      <pages unit="KiB" size="1048576"/>
+    </cpu>
+    <power_management>
+      <suspend_mem/>
+      <suspend_disk/>
+      <suspend_hybrid/>
+    </power_management>
+    <migration_features>
+      <live/>
+      <uri_transports>
+        <uri_transport>tcp</uri_transport>
+        <uri_transport>rdma</uri_transport>
+      </uri_transports>
+    </migration_features>
+    <topology>
+      <cells num="1">
+        <cell id="0">
+          <memory unit="KiB">8087136</memory>
+          <pages unit="KiB" size="4">2021784</pages>
+          <pages unit="KiB" size="2048">0</pages>
+          <pages unit="KiB" size="1048576">0</pages>
+          <distances>
+            <sibling id="0" value="10"/>
+          </distances>
+          <cpus num="4">
+            <cpu id="0" socket_id="0" core_id="0" siblings="0"/>
+            <cpu id="1" socket_id="0" core_id="1" siblings="1"/>
+            <cpu id="2" socket_id="0" core_id="2" siblings="2"/>
+            <cpu id="3" socket_id="0" core_id="3" siblings="3"/>
+          </cpus>
+        </cell>
+      </cells>
+    </topology>
+    <cache>
+      <bank id="0" level="3" type="both" size="10" unit="MiB" cpus="0-3"/>
+    </cache>
+    <secmodel>
+      <model>apparmor</model>
+      <doi>0</doi>
+    </secmodel>
+    <secmodel>
+      <model>dac</model>
+      <doi>0</doi>
+      <baselabel type="kvm">+64055:+128</baselabel>
+      <baselabel type="qemu">+64055:+128</baselabel>
+    </secmodel>
+  </host>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="i686">
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-i386</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-i386</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+      <pae/>
+      <nonpae/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="x86_64">
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+    </features>
+  </guest>
+
+</capabilities>
+
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:876) Using domain events
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:913) Using network events
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:933) Using storage pool events
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:952) Using node device events
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:831) storage pool refresh event: pool=default
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:831) storage pool refresh event: pool=Downloads
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1198) network=default status=Active added
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1198) interface=lo status=Active added
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1198) pool=default status=Active added
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1198) domain=ubuntu18.04 status=Running added
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:1198) pool=Downloads status=Active added
+[Mon, 31 Aug 2020 13:03:36 virt-manager 14650] DEBUG (connection:602) conn=qemu:///system changed to state=Active
+[Mon, 31 Aug 2020 13:03:41 virt-manager 14650] DEBUG (serialcon:37) Using VTE API 2.91
+[Mon, 31 Aug 2020 13:03:41 virt-manager 14650] DEBUG (details:646) Showing VM details: <vmmDomain name=ubuntu18.04 id=0x7f4c7c672b90>
+[Mon, 31 Aug 2020 13:03:41 virt-manager 14650] DEBUG (engine:405) window counter incremented to 2
+[Mon, 31 Aug 2020 13:03:41 virt-manager 14650] DEBUG (console:721) Starting connect process for proto=spice trans= connhost=127.0.0.1 connuser= connport= gaddr=127.0.0.1 gport=5900 gtlsport=None gsocket=None
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.UsbredirChannel object at 0x7f4c7c578a00 (SpiceUsbredirChannel at 0x558454b21970)>
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.UsbredirChannel object at 0x7f4c7c578a00 (SpiceUsbredirChannel at 0x558454b25610)>
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.RecordChannel object at 0x7f4c7c578a00 (SpiceRecordChannel at 0x558454ae9230)>
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.PlaybackChannel object at 0x7f4c7c578a00 (SpicePlaybackChannel at 0x558454b28230)>
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.DisplayChannel object at 0x7f4c7c578a00 (SpiceDisplayChannel at 0x558454349bf0)>
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (console:844) Viewer connected
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.CursorChannel object at 0x7f4c7d075c80 (SpiceCursorChannel at 0x558454c08220)>
+[Mon, 31 Aug 2020 13:03:42 virt-manager 14650] DEBUG (viewers:607) Requesting fd for channel: <SpiceClientGLib.InputsChannel object at 0x7f4c7c632320 (SpiceInputsChannel at 0x558454c15d00)>
+[Mon, 31 Aug 2020 13:04:26 virt-manager 14650] DEBUG (preferences:97) Showing preferences
+[Mon, 31 Aug 2020 13:04:32 virt-manager 14650] DEBUG (preferences:92) Closing preferences
+[Mon, 31 Aug 2020 13:05:01 virt-manager 14650] DEBUG (connection:847) node device lifecycle event: device=net_can0 event=1 reason=0
+[Mon, 31 Aug 2020 13:05:01 virt-manager 14650] DEBUG (connection:1159) nodedev=net_can0 removed
+[Mon, 31 Aug 2020 13:05:02 virt-manager 14650] DEBUG (connection:847) node device lifecycle event: device=net_can0 event=0 reason=0
+[Mon, 31 Aug 2020 13:05:03 virt-manager 14650] DEBUG (connection:847) node device lifecycle event: device=net_can0 event=1 reason=0
+[Mon, 31 Aug 2020 13:05:03 virt-manager 14650] DEBUG (connection:1159) nodedev=net_can0 removed
+[Mon, 31 Aug 2020 13:07:15 virt-manager 14650] DEBUG (connection:856) node device update event: device=drm_card0
+[Mon, 31 Aug 2020 18:17:44 virt-manager 14650] DEBUG (connection:856) node device update event: device=drm_card0
+[Mon, 31 Aug 2020 18:18:31 virt-manager 14650] DEBUG (details:682) Closing VM details: <vmmDomain name=ubuntu18.04 id=0x7f4c7c672b90>
+[Mon, 31 Aug 2020 18:18:31 virt-manager 14650] DEBUG (engine:409) window counter decremented to 1
+[Mon, 31 Aug 2020 18:18:31 virt-manager 14650] DEBUG (connection:847) node device lifecycle event: device=net_can0 event=0 reason=0
+[Mon, 31 Aug 2020 18:18:33 virt-manager 14650] DEBUG (manager:218) Closing manager
+[Mon, 31 Aug 2020 18:18:33 virt-manager 14650] DEBUG (engine:409) window counter decremented to 0
+[Mon, 31 Aug 2020 18:18:33 virt-manager 14650] DEBUG (engine:471) No windows found, requesting app exit
+[Mon, 31 Aug 2020 18:18:33 virt-manager 14650] DEBUG (preferences:92) Closing preferences
+[Mon, 31 Aug 2020 18:18:33 virt-manager 14650] DEBUG (connection:968) conn.close() uri=qemu:///system
+[Mon, 31 Aug 2020 18:18:33 virt-manager 14650] DEBUG (connection:602) conn=qemu:///system changed to state=Disconnected
+[Mon, 31 Aug 2020 18:18:33 virt-manager 14650] DEBUG (engine:495) Exiting app normally.
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17140] DEBUG (cli:265) Launched with command line: /usr/share/virt-manager/virt-manager
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17140] DEBUG (virt-manager:185) virt-manager version: 1.5.1
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17140] DEBUG (virt-manager:186) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (virt-manager:216) PyGObject version: 3.26.1
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (virt-manager:220) GTK version: 3.22.30
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (engine:500) libguestfs inspection support: False
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (systray:74) Using AppIndicator3 for systray
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (systray:156) Showing systray: False
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (engine:1038) processing cli command uri= show_window= domain=
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (engine:1040) No cli action requested, launching default window
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (manager:207) Showing manager
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (engine:405) window counter incremented to 1
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (engine:162) Loading stored URIs:
+qemu:///system
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (engine:141) Initial gtkapplication activated
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:602) conn=qemu:///system changed to state=Connecting
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1019) Scheduling background open thread for qemu:///system
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1071) libvirt version=4000000
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1073) daemon version=4000000
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1074) conn version=2011001
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1076) qemu:///system capabilities:
+<capabilities>
+
+  <host>
+    <uuid>4c4c4544-0035-5410-8052-c2c04f584732</uuid>
+    <cpu>
+      <arch>x86_64</arch>
+      <model>Haswell-noTSX-IBRS</model>
+      <vendor>Intel</vendor>
+      <microcode version="67"/>
+      <topology sockets="1" cores="4" threads="1"/>
+      <feature name="vme"/>
+      <feature name="ds"/>
+      <feature name="acpi"/>
+      <feature name="ss"/>
+      <feature name="ht"/>
+      <feature name="tm"/>
+      <feature name="pbe"/>
+      <feature name="dtes64"/>
+      <feature name="monitor"/>
+      <feature name="ds_cpl"/>
+      <feature name="vmx"/>
+      <feature name="smx"/>
+      <feature name="est"/>
+      <feature name="tm2"/>
+      <feature name="xtpr"/>
+      <feature name="pdcm"/>
+      <feature name="dca"/>
+      <feature name="osxsave"/>
+      <feature name="f16c"/>
+      <feature name="rdrand"/>
+      <feature name="arat"/>
+      <feature name="tsc_adjust"/>
+      <feature name="cmt"/>
+      <feature name="md-clear"/>
+      <feature name="ssbd"/>
+      <feature name="xsaveopt"/>
+      <feature name="pdpe1gb"/>
+      <feature name="abm"/>
+      <feature name="invtsc"/>
+      <pages unit="KiB" size="4"/>
+      <pages unit="KiB" size="2048"/>
+      <pages unit="KiB" size="1048576"/>
+    </cpu>
+    <power_management>
+      <suspend_mem/>
+      <suspend_disk/>
+      <suspend_hybrid/>
+    </power_management>
+    <migration_features>
+      <live/>
+      <uri_transports>
+        <uri_transport>tcp</uri_transport>
+        <uri_transport>rdma</uri_transport>
+      </uri_transports>
+    </migration_features>
+    <topology>
+      <cells num="1">
+        <cell id="0">
+          <memory unit="KiB">8087136</memory>
+          <pages unit="KiB" size="4">2021784</pages>
+          <pages unit="KiB" size="2048">0</pages>
+          <pages unit="KiB" size="1048576">0</pages>
+          <distances>
+            <sibling id="0" value="10"/>
+          </distances>
+          <cpus num="4">
+            <cpu id="0" socket_id="0" core_id="0" siblings="0"/>
+            <cpu id="1" socket_id="0" core_id="1" siblings="1"/>
+            <cpu id="2" socket_id="0" core_id="2" siblings="2"/>
+            <cpu id="3" socket_id="0" core_id="3" siblings="3"/>
+          </cpus>
+        </cell>
+      </cells>
+    </topology>
+    <cache>
+      <bank id="0" level="3" type="both" size="10" unit="MiB" cpus="0-3"/>
+    </cache>
+    <secmodel>
+      <model>apparmor</model>
+      <doi>0</doi>
+    </secmodel>
+    <secmodel>
+      <model>dac</model>
+      <doi>0</doi>
+      <baselabel type="kvm">+64055:+128</baselabel>
+      <baselabel type="qemu">+64055:+128</baselabel>
+    </secmodel>
+  </host>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="i686">
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-i386</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-i386</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+      <pae/>
+      <nonpae/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="x86_64">
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+    </features>
+  </guest>
+
+</capabilities>
+
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:876) Using domain events
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:913) Using network events
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:933) Using storage pool events
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:952) Using node device events
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1198) network=default status=Active added
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1198) domain=ubuntu18.04 status=Running added
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1198) interface=lo status=Active added
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:831) storage pool refresh event: pool=default
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1198) pool=default status=Active added
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:831) storage pool refresh event: pool=Downloads
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:1198) pool=Downloads status=Active added
+[Mon, 31 Aug 2020 18:19:23 virt-manager 17146] DEBUG (connection:602) conn=qemu:///system changed to state=Active
+[Mon, 31 Aug 2020 18:19:29 virt-manager 17146] DEBUG (engine:1211) Shutting down vm 'ubuntu18.04'
+[Mon, 31 Aug 2020 18:19:40 virt-manager 17146] DEBUG (engine:1134) Destroying vm 'ubuntu18.04'
+[Mon, 31 Aug 2020 18:19:42 virt-manager 17146] DEBUG (connection:788) domain lifecycle event: domain=ubuntu18.04 event=5 reason=1
+[Mon, 31 Aug 2020 18:19:42 virt-manager 17146] DEBUG (connection:847) node device lifecycle event: device=net_vnet0_fe_54_00_19_e0_57 event=1 reason=0
+[Mon, 31 Aug 2020 18:19:42 virt-manager 17146] DEBUG (connection:1159) nodedev=net_vnet0_fe_54_00_19_e0_57 removed
+[Mon, 31 Aug 2020 18:21:02 virt-manager 17146] DEBUG (manager:218) Closing manager
+[Mon, 31 Aug 2020 18:21:02 virt-manager 17146] DEBUG (engine:409) window counter decremented to 0
+[Mon, 31 Aug 2020 18:21:02 virt-manager 17146] DEBUG (engine:471) No windows found, requesting app exit
+[Mon, 31 Aug 2020 18:21:02 virt-manager 17146] DEBUG (connection:968) conn.close() uri=qemu:///system
+[Mon, 31 Aug 2020 18:21:02 virt-manager 17146] DEBUG (connection:602) conn=qemu:///system changed to state=Disconnected
+[Mon, 31 Aug 2020 18:21:02 virt-manager 17146] DEBUG (engine:495) Exiting app normally.
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17973] DEBUG (cli:265) Launched with command line: /usr/share/virt-manager/virt-manager
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17973] DEBUG (virt-manager:185) virt-manager version: 1.5.1
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17973] DEBUG (virt-manager:186) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (virt-manager:216) PyGObject version: 3.26.1
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (virt-manager:220) GTK version: 3.22.30
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (engine:500) libguestfs inspection support: False
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (systray:74) Using AppIndicator3 for systray
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (systray:156) Showing systray: False
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (engine:1038) processing cli command uri= show_window= domain=
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (engine:1040) No cli action requested, launching default window
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (manager:207) Showing manager
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (engine:405) window counter incremented to 1
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (engine:162) Loading stored URIs:
+qemu:///system
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (engine:141) Initial gtkapplication activated
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:602) conn=qemu:///system changed to state=Connecting
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1019) Scheduling background open thread for qemu:///system
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1071) libvirt version=4000000
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1073) daemon version=4000000
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1074) conn version=2011001
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1076) qemu:///system capabilities:
+<capabilities>
+
+  <host>
+    <uuid>4c4c4544-0035-5410-8052-c2c04f584732</uuid>
+    <cpu>
+      <arch>x86_64</arch>
+      <model>Haswell-noTSX-IBRS</model>
+      <vendor>Intel</vendor>
+      <microcode version="67"/>
+      <topology sockets="1" cores="4" threads="1"/>
+      <feature name="vme"/>
+      <feature name="ds"/>
+      <feature name="acpi"/>
+      <feature name="ss"/>
+      <feature name="ht"/>
+      <feature name="tm"/>
+      <feature name="pbe"/>
+      <feature name="dtes64"/>
+      <feature name="monitor"/>
+      <feature name="ds_cpl"/>
+      <feature name="vmx"/>
+      <feature name="smx"/>
+      <feature name="est"/>
+      <feature name="tm2"/>
+      <feature name="xtpr"/>
+      <feature name="pdcm"/>
+      <feature name="dca"/>
+      <feature name="osxsave"/>
+      <feature name="f16c"/>
+      <feature name="rdrand"/>
+      <feature name="arat"/>
+      <feature name="tsc_adjust"/>
+      <feature name="cmt"/>
+      <feature name="md-clear"/>
+      <feature name="ssbd"/>
+      <feature name="xsaveopt"/>
+      <feature name="pdpe1gb"/>
+      <feature name="abm"/>
+      <feature name="invtsc"/>
+      <pages unit="KiB" size="4"/>
+      <pages unit="KiB" size="2048"/>
+      <pages unit="KiB" size="1048576"/>
+    </cpu>
+    <power_management>
+      <suspend_mem/>
+      <suspend_disk/>
+      <suspend_hybrid/>
+    </power_management>
+    <migration_features>
+      <live/>
+      <uri_transports>
+        <uri_transport>tcp</uri_transport>
+        <uri_transport>rdma</uri_transport>
+      </uri_transports>
+    </migration_features>
+    <topology>
+      <cells num="1">
+        <cell id="0">
+          <memory unit="KiB">8087136</memory>
+          <pages unit="KiB" size="4">2021784</pages>
+          <pages unit="KiB" size="2048">0</pages>
+          <pages unit="KiB" size="1048576">0</pages>
+          <distances>
+            <sibling id="0" value="10"/>
+          </distances>
+          <cpus num="4">
+            <cpu id="0" socket_id="0" core_id="0" siblings="0"/>
+            <cpu id="1" socket_id="0" core_id="1" siblings="1"/>
+            <cpu id="2" socket_id="0" core_id="2" siblings="2"/>
+            <cpu id="3" socket_id="0" core_id="3" siblings="3"/>
+          </cpus>
+        </cell>
+      </cells>
+    </topology>
+    <cache>
+      <bank id="0" level="3" type="both" size="10" unit="MiB" cpus="0-3"/>
+    </cache>
+    <secmodel>
+      <model>apparmor</model>
+      <doi>0</doi>
+    </secmodel>
+    <secmodel>
+      <model>dac</model>
+      <doi>0</doi>
+      <baselabel type="kvm">+64055:+128</baselabel>
+      <baselabel type="qemu">+64055:+128</baselabel>
+    </secmodel>
+  </host>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="i686">
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-i386</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-i386</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+      <pae/>
+      <nonpae/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name="x86_64">
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      <machine maxCpus="255">pc-i440fx-bionic</machine>
+      <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+      <machine maxCpus="1">isapc</machine>
+      <machine maxCpus="255">pc-1.1</machine>
+      <machine maxCpus="255">pc-1.2</machine>
+      <machine maxCpus="255">pc-1.3</machine>
+      <machine maxCpus="255">pc-i440fx-zesty</machine>
+      <machine maxCpus="255">pc-i440fx-2.8</machine>
+      <machine maxCpus="255">pc-1.0</machine>
+      <machine maxCpus="255">pc-i440fx-2.9</machine>
+      <machine maxCpus="255">pc-i440fx-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.7</machine>
+      <machine maxCpus="128">xenfv</machine>
+      <machine maxCpus="255">pc-i440fx-wily</machine>
+      <machine maxCpus="255">pc-i440fx-2.3</machine>
+      <machine maxCpus="255">pc-i440fx-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.5</machine>
+      <machine maxCpus="255">pc-i440fx-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-2.1</machine>
+      <machine maxCpus="255">pc-i440fx-2.2</machine>
+      <machine maxCpus="255">pc-i440fx-2.0</machine>
+      <machine maxCpus="255">pc-q35-yakkety</machine>
+      <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+      <machine maxCpus="288">pc-q35-2.11</machine>
+      <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+      <machine maxCpus="255">pc-i440fx-xenial</machine>
+      <machine maxCpus="1">xenpv</machine>
+      <machine maxCpus="288">pc-q35-2.10</machine>
+      <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+      <machine maxCpus="255">pc-q35-xenial</machine>
+      <machine maxCpus="255">pc-i440fx-artful</machine>
+      <machine maxCpus="255">pc-i440fx-1.7</machine>
+      <machine maxCpus="288">pc-q35-2.9</machine>
+      <machine maxCpus="255">pc-0.15</machine>
+      <machine maxCpus="255">pc-i440fx-1.5</machine>
+      <machine maxCpus="255">pc-q35-2.7</machine>
+      <machine maxCpus="255">pc-i440fx-1.6</machine>
+      <machine maxCpus="255">pc-i440fx-2.11</machine>
+      <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+      <machine maxCpus="288">pc-q35-2.8</machine>
+      <machine maxCpus="288">pc-q35-zesty</machine>
+      <machine maxCpus="255">pc-0.13</machine>
+      <machine maxCpus="288">pc-q35-artful</machine>
+      <machine maxCpus="255">pc-0.14</machine>
+      <machine maxCpus="255">pc-q35-2.4</machine>
+      <machine maxCpus="255">pc-i440fx-trusty</machine>
+      <machine maxCpus="255">pc-q35-2.5</machine>
+      <machine maxCpus="255">pc-q35-2.6</machine>
+      <machine maxCpus="255">pc-i440fx-1.4</machine>
+      <machine maxCpus="255">pc-i440fx-2.10</machine>
+      <machine maxCpus="255">pc-0.11</machine>
+      <machine maxCpus="255">pc-0.12</machine>
+      <machine maxCpus="288">pc-q35-bionic</machine>
+      <machine maxCpus="255">pc-0.10</machine>
+      <domain type="qemu">
+        <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      </domain>
+      <domain type="kvm">
+        <emulator>/usr/bin/kvm-spice</emulator>
+        <machine maxCpus="255">pc-i440fx-bionic</machine>
+        <machine canonical="pc-i440fx-bionic" maxCpus="255">ubuntu</machine>
+        <machine maxCpus="1">isapc</machine>
+        <machine maxCpus="255">pc-1.1</machine>
+        <machine maxCpus="255">pc-1.2</machine>
+        <machine maxCpus="255">pc-1.3</machine>
+        <machine maxCpus="255">pc-i440fx-zesty</machine>
+        <machine maxCpus="255">pc-i440fx-2.8</machine>
+        <machine maxCpus="255">pc-1.0</machine>
+        <machine maxCpus="255">pc-i440fx-2.9</machine>
+        <machine maxCpus="255">pc-i440fx-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.7</machine>
+        <machine maxCpus="128">xenfv</machine>
+        <machine maxCpus="255">pc-i440fx-wily</machine>
+        <machine maxCpus="255">pc-i440fx-2.3</machine>
+        <machine maxCpus="255">pc-i440fx-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.5</machine>
+        <machine maxCpus="255">pc-i440fx-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-2.1</machine>
+        <machine maxCpus="255">pc-i440fx-2.2</machine>
+        <machine maxCpus="255">pc-i440fx-2.0</machine>
+        <machine maxCpus="255">pc-q35-yakkety</machine>
+        <machine maxCpus="255">pc-i440fx-bionic-hpb</machine>
+        <machine maxCpus="288">pc-q35-2.11</machine>
+        <machine canonical="pc-q35-2.11" maxCpus="288">q35</machine>
+        <machine maxCpus="255">pc-i440fx-xenial</machine>
+        <machine maxCpus="1">xenpv</machine>
+        <machine maxCpus="288">pc-q35-2.10</machine>
+        <machine maxCpus="288">pc-q35-bionic-hpb</machine>
+        <machine maxCpus="255">pc-q35-xenial</machine>
+        <machine maxCpus="255">pc-i440fx-artful</machine>
+        <machine maxCpus="255">pc-i440fx-1.7</machine>
+        <machine maxCpus="288">pc-q35-2.9</machine>
+        <machine maxCpus="255">pc-0.15</machine>
+        <machine maxCpus="255">pc-i440fx-1.5</machine>
+        <machine maxCpus="255">pc-q35-2.7</machine>
+        <machine maxCpus="255">pc-i440fx-1.6</machine>
+        <machine maxCpus="255">pc-i440fx-2.11</machine>
+        <machine canonical="pc-i440fx-2.11" maxCpus="255">pc</machine>
+        <machine maxCpus="288">pc-q35-2.8</machine>
+        <machine maxCpus="288">pc-q35-zesty</machine>
+        <machine maxCpus="255">pc-0.13</machine>
+        <machine maxCpus="288">pc-q35-artful</machine>
+        <machine maxCpus="255">pc-0.14</machine>
+        <machine maxCpus="255">pc-q35-2.4</machine>
+        <machine maxCpus="255">pc-i440fx-trusty</machine>
+        <machine maxCpus="255">pc-q35-2.5</machine>
+        <machine maxCpus="255">pc-q35-2.6</machine>
+        <machine maxCpus="255">pc-i440fx-1.4</machine>
+        <machine maxCpus="255">pc-i440fx-2.10</machine>
+        <machine maxCpus="255">pc-0.11</machine>
+        <machine maxCpus="255">pc-0.12</machine>
+        <machine maxCpus="288">pc-q35-bionic</machine>
+        <machine maxCpus="255">pc-0.10</machine>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <disksnapshot default="on" toggle="no"/>
+      <acpi default="on" toggle="yes"/>
+      <apic default="on" toggle="no"/>
+    </features>
+  </guest>
+
+</capabilities>
+
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:876) Using domain events
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:913) Using network events
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:933) Using storage pool events
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:952) Using node device events
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:831) storage pool refresh event: pool=default
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1198) network=default status=Active added
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1198) pool=default status=Active added
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:831) storage pool refresh event: pool=Downloads
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1198) interface=lo status=Active added
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1198) pool=Downloads status=Active added
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:1198) domain=ubuntu18.04 status=Shutoff added
+[Mon, 31 Aug 2020 18:32:37 virt-manager 17978] DEBUG (connection:602) conn=qemu:///system changed to state=Active
+[Mon, 31 Aug 2020 18:32:44 virt-manager 17978] DEBUG (manager:218) Closing manager
+[Mon, 31 Aug 2020 18:32:44 virt-manager 17978] DEBUG (engine:409) window counter decremented to 0
+[Mon, 31 Aug 2020 18:32:44 virt-manager 17978] DEBUG (engine:471) No windows found, requesting app exit
+[Mon, 31 Aug 2020 18:32:44 virt-manager 17978] DEBUG (connection:968) conn.close() uri=qemu:///system
+[Mon, 31 Aug 2020 18:32:44 virt-manager 17978] DEBUG (connection:602) conn=qemu:///system changed to state=Disconnected
+[Mon, 31 Aug 2020 18:32:44 virt-manager 17978] DEBUG (engine:495) Exiting app normally.

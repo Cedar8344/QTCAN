@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="keywords" content="libcod, recompile, updating, source, compile, binaries, downloaded, proper, system, target, mysql, libmysqlclient.so.18, downgrade, easier" />
+	<meta name="description" content="Hi there, so the problem I've got now is this: 
+ 
+Error while loading shared libraries: libmysqlclient.so.18: cannot open shared object 
+ 
+So basically it can not find the library, well I've tried a lot of fixes but none worked, would you guys recommend me any solution?" />
+	
+	<title> libmysqlclient.so.18 [Archive]  - killtube.org</title>
+	<link rel="stylesheet" type="text/css" href="https://killtube.org/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://killtube.org/archive/index.php">killtube.org</a> &gt; <a href="https://killtube.org/archive/index.php/f-29.html">Call of Duty 1, 2, 4, 5</a> &gt; <a href="https://killtube.org/archive/index.php/f-44.html">libcod</a> &gt;  libmysqlclient.so.18</div>
+<hr />
+<div class="pda"><a href="https://killtube.org/archive/index.php/t-1567.html?pda=1" rel="nofollow">PDA</a></div>
+<p class="largefont">View Full Version : <a href="https://killtube.org/showthread.php?1567-libmysqlclient-so-18">libmysqlclient.so.18</a></p>
+<hr />
+<div class="floatcontainer"></div><br />
+<div class="post"><div class="posttop"><div class="username">YuriJurek</div><div class="date">17th September 2013, 22:26</div></div><div class="posttext">Hi there, so the problem I've got now is this:<br />
+<br />
+<br />
+Error while loading shared libraries: libmysqlclient.so.18: cannot open shared object<br />
+<br />
+So basically it can not find the library, well I've tried a lot of fixes but none worked, would you guys recommend me any solution?</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">kung foo man</div><div class="date">17th September 2013, 23:57</div></div><div class="posttext">Hey, which .so-file are you currently using?<br />
+<br />
+Did you:<br />
+<br />
+<br />
+<br />
+apt-get install gcc-multilib<br />
+apt-get install libmysqlclient-dev:i386<br />
+apt-get install g++-multilib<br />
+<br />
+<br />
+Which linux you are using?</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">YuriJurek</div><div class="date">18th September 2013, 00:05</div></div><div class="posttext">Hmmn, guess it's Debian x64 (While not quite sure cuz It's Blancos).<br />
+Not tried yet with those, I am going to try it later today, thanks for quick answer.</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">BlancO</div><div class="date">18th September 2013, 07:40</div></div><div class="posttext">E: Nie uda&#322;o si&#281; odnale&#378;&#263; pakietu libmysqlclient-dev:i386<br />
+<br />
+<br />
+english:<br />
+<br />
+<br />
+E: Can't find package libmysqlclient-dev:i386<br />
+<br />
+<br />
+I see this after entering &quot;apt-get install libmysqlclient-dev:i386&quot;</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">Earliboy</div><div class="date">18th September 2013, 12:23</div></div><div class="posttext">dpkg --add-architecture i386<br />
+apt-get update</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">kung foo man</div><div class="date">18th September 2013, 13:01</div></div><div class="posttext">For the case dpkg doesn't work also, you can use the old way:<br />
+<br />
+Download the mysql libs here: http://dbg.killtube.org/libcod/libs/mysql/<br />
+<br />
+Start like this:<br />
+<br />
+<br />
+<br />
+LD_LIBRARY_PATH=/folder/to/libs/mysql LD_PRELOAD=libcod2_1_3.so ./cod2_lnxded +set fs_game ...<br />
+<br />
+or:<br />
+<br />
+<br />
+export LD_LIBRARY_PATH=&quot;/folder/to/libs/mysql&quot;<br />
+export LD_PRELOAD=&quot;libcod2_1_3.so&quot;<br />
+./cod2_lnxded +set fs_game ...<br />
+<br />
+<br />
+For the case that's not working also, I've compiled libcod without the mysql-dependency: http://killtube.org/downloads/libcod/<br />
+<br />
+Edit: Silent requested some files, old files are down: http://killtube.org/downloads/silent/</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">Ni3ls</div><div class="date">14th August 2016, 18:50</div></div><div class="posttext">For the case dpkg doesn't work also, you can use the old way:<br />
+<br />
+Download the mysql libs here: http://dbg.killtube.org/libcod/libs/mysql/<br />
+<br />
+<br />
+How to download that?</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">IzNoGoD</div><div class="date">14th August 2016, 20:00</div></div><div class="posttext">There are seemingly some troubles on debian x64. Maybe try editting your apt-get lists, might not find the x86 packages because of missing files on your mirrors.</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">kung foo man</div><div class="date">14th August 2016, 21:34</div></div><div class="posttext">How to download that?<br />
+<br />
+The MySQL libs are here now: http://killtube.org/downloads/silent/mysql/</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">IzNoGoD</div><div class="date">14th August 2016, 22:25</div></div><div class="posttext">Please show the results of cat /etc/apt/sources.list</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">dacajoca</div><div class="date">30th March 2017, 20:00</div></div><div class="posttext">Hi<br />
+Something wrong with you'r libmysql client.<br />
+This piece of cod request uninstall multilib ??<br />
+I try in other thread's to find answer, but, anyone has real answer. What is benefit's for use libcod??<br />
+For libcod we need mysql server, mysql server use much resource's from dedicated or VPS.<br />
+For DDoS protection, which is more actual themes in cod2, only support is provider with property configured routers.<br />
+For all other scripts, we use scripting in .iwd files, so, can you answer to trivial question:<br />
+Why use libcod ?????</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">IzNoGoD</div><div class="date">30th March 2017, 20:31</div></div><div class="posttext">You dont need to install mysql server to use libcod. It includes a connector which can connect to mysql servers, but it's not a requirement. If you read the installation guide, you'll see that it requires mysqlclient, not mysqlserver. You can also disable mysql inside the config files to get rid of it entirely.<br />
+<br />
+It's not ddos protection for YOUR server, it's protection from the q3 getstatus/getinfo amplification attack, in which your server is utilized to amplify a ddos against a third party server.<br />
+<br />
+For scripting, libcod adds multiple script functions not available in stock cod2_lnxded.<br />
+<br />
+And multilib is not uninstalled by libcod, it's uninstalled by the prereqs for compiling your own libcod. Voron's version already uses g++ only, you dont need gcc anymore.</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">filthy_freak_</div><div class="date">22nd January 2019, 05:31</div></div><div class="posttext">I had a similar issue when using libcod with Ubuntu 18.04<br />
+<br />
+<br />
+<br />
+Error while loading shared libraries: libmysqlclient.so.18: cannot open shared object file: No such file or directory<br />
+<br />
+<br />
+Probably because I compiled libcod on Ubuntu 14.04.<br />
+<br />
+Fix is to uninstall current libraries;<br />
+<br />
+<br />
+sudo apt-get --purge remove libmysqlclient-dev:i386<br />
+<br />
+<br />
+Then download this .deb package and install;<br />
+<br />
+<br />
+wget http://launchpadlibrarian.net/247514894/libmysqlclient18_5.6.28-1ubuntu3_i386.deb<br />
+sudo apt install ./libmysqlclient18_5.6.28-1ubuntu3_i386.deb</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">IzNoGoD</div><div class="date">23rd January 2019, 03:35</div></div><div class="posttext">Probably because I compiled libcod on Ubuntu 14.04.<br />
+<br />
+Fix is to uninstall current libraries;<br />
+<br />
+<br />
+Or to recompile libcod on your target system...</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">filthy_freak_</div><div class="date">23rd January 2019, 03:41</div></div><div class="posttext">Or to recompile libcod on your target system...<br />
+<br />
+Yes the proper fix would be to recompile.<br />
+<br />
+But for me it was easier to just downgrade mysql because I have made so many changes to my libcod source that it won't work without updating my mod.<br />
+<br />
+Also useful for those that downloaded the libcod binaries and don't know how to compile.</div></div><hr />
+
+
+<div id="copyright">Powered by vBulletin&reg; Version 4.2.5 Copyright &copy; 2020 vBulletin Solutions Inc. All rights reserved.</div>
+</div>
+</body>
+</html>î3R˜Ç®           _HPøBw_HPø   3    :https://killtube.org/archive/index.php/t-1567.html strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEANQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAVlMIIFYTCCBEmgAwIBAgISAzk5fFRvn9kbZByjM09qUFRNMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0yMDA2MjIxMjU3MjFaFw0yMDA5MjAxMjU3MjFaMBcxFTATBgNVBAMTDGtpbGx0dWJlLm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKDUg+z7OleZ8t2MDvt/vpqtutudI+wIpmAi1YsWjbxMsc0AKLg6qcEDqrsDTsnOuY5DEhABMQxsMhARJUVYR0dCShvWOnHhoJtRDpmRYSq6gHizrEM0U7QebHKBq28oSY4HZiwbNFbazkrGaYUGxD4/NvTk4eFyk+9df6dD8FvSDNoyVNVW3ipmmC6s066emtRsVKvOinAy8YaF1PzmP6yxEy3VIiGL2wAc5xiuDjmB9V5cyB1sczE6I6Mk5mfJgTb3Pw/HSZHmNMHNxSAiqkmtGCxYEF+G0z9ikQYMEOSYHwxIIvPopSjh1iUJyRqErtYP61ue5KVb7nq+J9eA32ECAwEAAaOCAnIwggJuMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUIqHvW4HNIiiryhlkFaql6+cLW0wwHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwbwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMubGV0c2VuY3J5cHQub3JnLzApBgNVHREEIjAgggxraWxsdHViZS5vcmeCEHd3dy5raWxsdHViZS5vcmcwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdgBep3P531bA57U2SH3QSeAyepGaDIShEhKEGHWWgXFFWAAAAXLcUbK3AAAEAwBHMEUCIHrtbs8DDdohGpl3yEUu+dJOO8Id0Cca76TEUXlmjuOSAiEA7aPXpR8fu7wu2BZraedLwtiO93d4x8geiMkCZIFZuUIAdQCyHgXMi6LNiiBOh2b5K7mKJSBna9r6cOeySVMt74uQXgAAAXLcUbKgAAAEAwBGMEQCIAqG7MGdeqBt5oHJ9619McSR9QneI0U9hJhe9XASInG6AiAEMztLIygbL+JFlNqIUYKU55GtiqKmcXBv/33nxIAAKjANBgkqhkiG9w0BAQsFAAOCAQEAlhLPWm4ikTtkae8CDvgVHh6Cs6QpIVIBwL/dIyXtXEoau7gDdNafvrXPwYh3WFSNjurAYmWSUEIbYFOHiQsivF5NTfMjWiD0GW3TLJdI6wbQCmBd44ejlyC45FbgLgpydTNV9GnXOLQKEBY2Bwy4tWB5rbeIEuz19ur0pMEZKjIB8Upz4e6wIbLlAWqxYR9MjsOs4VHadlVMYpnP1bcXXk/9HtL2VTDIdrKqBNMXnvqHB4IflOwa7VIXVBKrdsihvHWF31/1+PNBEq8QtKNBaNNYuFsKOZd6mnBlA8AWExGLvmcE9x3D5JhLbdL10A5HZuiBlLZJnvFeGOmeCBAVasAwAAMAAAAAAQEAAAAAAAAEbm9uZQAAABBSU0EtUEtDUzEtU0hBNTEyAANmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAVlMIIFYTCCBEmgAwIBAgISAzk5fFRvn9kbZByjM09qUFRNMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0yMDA2MjIxMjU3MjFaFw0yMDA5MjAxMjU3MjFaMBcxFTATBgNVBAMTDGtpbGx0dWJlLm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKDUg+z7OleZ8t2MDvt/vpqtutudI+wIpmAi1YsWjbxMsc0AKLg6qcEDqrsDTsnOuY5DEhABMQxsMhARJUVYR0dCShvWOnHhoJtRDpmRYSq6gHizrEM0U7QebHKBq28oSY4HZiwbNFbazkrGaYUGxD4/NvTk4eFyk+9df6dD8FvSDNoyVNVW3ipmmC6s066emtRsVKvOinAy8YaF1PzmP6yxEy3VIiGL2wAc5xiuDjmB9V5cyB1sczE6I6Mk5mfJgTb3Pw/HSZHmNMHNxSAiqkmtGCxYEF+G0z9ikQYMEOSYHwxIIvPopSjh1iUJyRqErtYP61ue5KVb7nq+J9eA32ECAwEAAaOCAnIwggJuMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUIqHvW4HNIiiryhlkFaql6+cLW0wwHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwbwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMubGV0c2VuY3J5cHQub3JnLzApBgNVHREEIjAgggxraWxsdHViZS5vcmeCEHd3dy5raWxsdHViZS5vcmcwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdgBep3P531bA57U2SH3QSeAyepGaDIShEhKEGHWWgXFFWAAAAXLcUbK3AAAEAwBHMEUCIHrtbs8DDdohGpl3yEUu+dJOO8Id0Cca76TEUXlmjuOSAiEA7aPXpR8fu7wu2BZraedLwtiO93d4x8geiMkCZIFZuUIAdQCyHgXMi6LNiiBOh2b5K7mKJSBna9r6cOeySVMt74uQXgAAAXLcUbKgAAAEAwBGMEQCIAqG7MGdeqBt5oHJ9619McSR9QneI0U9hJhe9XASInG6AiAEMztLIygbL+JFlNqIUYKU55GtiqKmcXBv/33nxIAAKjANBgkqhkiG9w0BAQsFAAOCAQEAlhLPWm4ikTtkae8CDvgVHh6Cs6QpIVIBwL/dIyXtXEoau7gDdNafvrXPwYh3WFSNjurAYmWSUEIbYFOHiQsivF5NTfMjWiD0GW3TLJdI6wbQCmBd44ejlyC45FbgLgpydTNV9GnXOLQKEBY2Bwy4tWB5rbeIEuz19ur0pMEZKjIB8Upz4e6wIbLlAWqxYR9MjsOs4VHadlVMYpnP1bcXXk/9HtL2VTDIdrKqBNMXnvqHB4IflOwa7VIXVBKrdsihvHWF31/1+PNBEq8QtKNBaNNYuFsKOZd6mnBlA8AWExGLvmcE9x3D5JhLbdL10A5HZuiBlLZJnvFeGOmeCBAVamYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABJYwggSSMIIDeqADAgECAhAKAUFCAAABU4VzaguF7KcIMA0GCSqGSIb3DQEBCwUAMD8xJDAiBgNVBAoTG0RpZ2l0YWwgU2lnbmF0dXJlIFRydXN0IENvLjEXMBUGA1UEAxMORFNUIFJvb3QgQ0EgWDMwHhcNMTYwMzE3MTY0MDQ2WhcNMjEwMzE3MTY0MDQ2WjBKMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEjMCEGA1UEAxMaTGV0J3MgRW5jcnlwdCBBdXRob3JpdHkgWDMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCc0wzwWuUuR7dyXTeDs2hjMOrXNSYZJeG9vjXxcJIvt7hLQQWrqZ41CFjssSrEaIcLo+N15Obzp2JxunmBYB/XkZqf89B4Z3HIaQ6Vkc/+5pnpYDxIzH7KTXcSJJ1HG1rrueweNwAcnKx7pwXqzkrrvUHlNpi5y/1tPJZo3yMqQpAMhnRnyH+lmrhSYRQTP2XpgofL2/oOVvaGifOFP5eGr7DcGu9rDZUWfcQroGWymQQ2dYBrrErzG5BJeC+ilk8qICUpBMZ0wNAxzY8xOJUWuqgzuEPxsR/DMH+ieTETPS02+OP88jNquTkxxa/EjQ0dZBYzqvqEKbbUC8DYfcOTAgMBAAGjggF9MIIBeTASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjB/BggrBgEFBQcBAQRzMHEwMgYIKwYBBQUHMAGGJmh0dHA6Ly9pc3JnLnRydXN0aWQub2NzcC5pZGVudHJ1c3QuY29tMDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFKhKamMEfd265tE5t6ZFZe/zqOyhMA0GCSqGSIb3DQEBCwUAA4IBAQDdM9cR82NYON0YFfsJVb52VrlwSKVpRyd7wiQIkvFaH0oSKTckdFEcYmi4zZVwZ+X3pLxOKFHNm+iuh53q2LpaoQGa3PDdah1q2D5XI56mHgRimv/XBcq3Hz/ACki8lLC2ZWLgwVTloyqtIMTp5rvcyPa1wzKjmMx3qOZ5ZQcryyj+OhZSgc5SDC5fg+jVBjP7d2zOQOoynh+SXEHBdGxbXQpfM8xNn6w48C97LGKd2aORbyUbL5CxGUY99n4bpnqHuaN6bRj6JaWRhxXg8hYvWLAGLyxoJsZLmM3anwz5f5DtQ0oSRE5vc3oo6qSqbntMfYfd4MkCRKeHr8M0W7RCZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAADTjCCA0owggIyoAMCAQICEESvsIDWoye6iTA5hi74QGswDQYJKoZIhvcNAQEFBQAwPzEkMCIGA1UEChMbRGlnaXRhbCBTaWduYXR1cmUgVHJ1c3QgQ28uMRcwFQYDVQQDEw5EU1QgUm9vdCBDQSBYMzAeFw0wMDA5MzAyMTEyMTlaFw0yMTA5MzAxNDAxMTVaMD8xJDAiBgNVBAoTG0RpZ2l0YWwgU2lnbmF0dXJlIFRydXN0IENvLjEXMBUGA1UEAxMORFNUIFJvb3QgQ0EgWDMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDfr+mXUAiDV7TMYmX2kILsx9MsazDKW+zZw33HQMEYFIvg6DN2SSrjPyFJk6xODq8+SMtl7vzTIQ9l0irZMo+M5fd3sBJ7tZXAiaOpuu1zLnoMBjKDon6KFDDNEaDhKji5eQox/VC9gGXft1Fjg8jiiGHqS2GB7FJruaLiSxoon0ijngzaCY4+Fy4e3SDfW8YqiqsuvXCtxQsaJZB0csV7aqs01jCJ/+VoE3tUC8jWruxanJIePWSzjMbfv8lBcOwWctUm7DhVOUPQ/P0YXEDxl+vVmpuNHbraJbnG2N/BFQI6q9pu8T4u9VwInDzWg2nkEJsZKrYpV+PlPZuf8AJdAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDANBgkqhkiG9w0BAQUFAAOCAQEAoxosmxcAXKke7ihmNzq/g8c/S8MJoJUgXePZWUTSPg0+vYpLoHQfzhCCnHQaHX6YGt3LE0uzIETkkenM/H2l22rl/ub94E7dtwA6tXBJr/Ll6wLx0QKLGcuUOl5IxBgeWBlfHgJa8Azxsa2p3FmGi27pkfWGyvq5ZjOqWVvO4qcWc0fLK8yZsDdIz+NWS/XPDwxyMofG8ES7U3JtQ/UmSJpSZ7dYq/5ndnF42w2iVhQTOSQxhaKoAlowR+HdUAe8AgmQAOtkY2CbFryIyRLm0n2Ri/k9Mo1ltOl8sVd26sW2KDm/FWUcyPZ3lmoKjXcL2JELBI4H2ym2Cu6dgjU1EAAAAAEAAAAAAQE= request-method GET response-head HTTP/1.1 200 OK
+Cache-Control: private
+Pragma: private
+Content-Type: text/html; charset=ISO-8859-1
+Content-Length: 9108
+Date: Fri, 28 Aug 2020 00:34:00 GMT
+Server: lighttpd/1.4.53
+ original-response-headers Set-Cookie: bb_lastactivity=0; expires=Sat, 28-Aug-2021 00:34:00 GMT; Max-Age=31536000; path=/; secure
+Cache-Control: private
+Pragma: private
+Content-Type: text/html; charset=ISO-8859-1
+Content-Length: 9108
+Date: Fri, 28 Aug 2020 00:34:00 GMT
+Server: lighttpd/1.4.53
+ ctid 1 uncompressed-len 0 predictor::resource-count 1 predictor::https://killtube.org/archive/archive.css 1,1,0,4096   #”

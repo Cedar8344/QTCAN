@@ -1,0 +1,27 @@
+2020/08/30-14:07:56.193 c51 Reusing MANIFEST /home/karl/.config/chromium/Default/IndexedDB/https_virtuozzosupport.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/30-14:07:58.067 da7 Level-0 table #5: started
+2020/08/30-14:07:58.155 da7 Level-0 table #5: 270814 bytes OK
+2020/08/30-14:07:58.225 da7 Delete type=0 #3
+2020/08/30-14:07:58.226 da7 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/08/30-14:07:59.322 da7 Level-0 table #7: started
+2020/08/30-14:07:59.426 da7 Level-0 table #7: 1425296 bytes OK
+2020/08/30-14:07:59.520 da7 Delete type=0 #4
+2020/08/30-22:59:37.313 da7 Level-0 table #9: started
+2020/08/30-22:59:37.379 da7 Level-0 table #9: 339964 bytes OK
+2020/08/30-22:59:37.442 da7 Delete type=0 #6
+2020/08/30-22:59:37.442 da7 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x07\x01\x1f\x03\x00\xd0\x04\xb5\xd0~wB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 7546 : 0
+2020/08/30-22:59:37.442 da7 Compacting 1@0 + 1@1 files
+2020/08/30-22:59:37.680 da7 Generated table #10@0: 3608 keys, 1391540 bytes
+2020/08/30-22:59:37.680 da7 Compacted 1@0 + 1@1 files => 1391540 bytes
+2020/08/30-22:59:37.800 da7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/08/30-22:59:37.800 da7 Delete type=2 #9
+2020/08/30-22:59:37.800 da7 Delete type=2 #7
+2020/08/30-22:59:37.801 da7 Manual compaction at level-0 from '\x00\x07\x01\x1f\x03\x00\xd0\x04\xb5\xd0~wB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 7546 : 0 .. (end); will stop at (end)
+2020/08/30-22:59:37.801 da7 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x07\x01\x1f\x03\x00\xd0\x04\xb5\xd0~wB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 7546 : 0
+2020/08/30-22:59:37.801 da7 Compacting 1@1 + 1@2 files
+2020/08/30-22:59:37.947 da7 Generated table #11@1: 1743 keys, 1442078 bytes
+2020/08/30-22:59:37.947 da7 Compacted 1@1 + 1@2 files => 1442078 bytes
+2020/08/30-22:59:38.008 da7 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/08/30-22:59:38.009 da7 Delete type=2 #5
+2020/08/30-22:59:38.009 da7 Delete type=2 #10
+2020/08/30-22:59:38.009 da7 Manual compaction at level-1 from '\x00\x07\x01\x1f\x03\x00\xd0\x04\xb5\xd0~wB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 7546 : 0 .. (end); will stop at (end)

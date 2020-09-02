@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="gnome-initial-setup.desktop" open-window-count="0" score="0.125" last-seen="1598399030"/>
+    <application id="virt-manager.desktop" open-window-count="0" score="3612.5" last-seen="1598923964"/>
+    <application id="update-manager.desktop" open-window-count="0" score="0" last-seen="1599012561"/>
+    <application id="org.gnome.Software.desktop" open-window-count="0" score="2" last-seen="1598821693"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="3" score="15072.5" last-seen="1599012526"/>
+    <application id="org.qt-project.qtcreator.desktop" open-window-count="1" score="4049.5" last-seen="1599012238"/>
+    <application id="firefox.desktop" open-window-count="1" score="1957" last-seen="1599012561"/>
+    <application id="chromium-browser.desktop" open-window-count="0" score="4.5" last-seen="1598923259"/>
+    <application id="rhythmbox.desktop" open-window-count="0" score="0" last-seen="1598993627"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="10.125" last-seen="1598820174"/>
+  </context>
+</application-state>

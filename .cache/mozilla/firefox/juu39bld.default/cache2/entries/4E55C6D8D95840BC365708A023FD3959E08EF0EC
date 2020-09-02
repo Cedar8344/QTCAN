@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Turn hexadecimal strings to decimal inte - C++ Forum</title>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/v322/main.css">
+<script src="/v322/main.js" type="text/javascript"></script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/147246189/cplusplus.com_728x90_leaderboard_1', [728, 90], 'div-gpt-ad-1593433023017-0').addService(googletag.pubads());
+    googletag.defineSlot('/147246189/cplusplus.com_234x120_sidebar_1', [234, 60], 'cplusplus.com_234x120_sidebar_1').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().disableInitialLoad();
+    googletag.enableServices();
+  });
+</script>
+<script src="https://cloud.setupad.com/hb/cpluspluscom.js" async></script></head>
+<body>
+<div id="I_top">
+<div id="I_header">
+<div id="I_logo"><a href="/" title="cplusplus.com"><div></div></a></div>
+<div id="I_search">
+<form id="search" action="/search.do" method="get">
+Search: <input name="q" size="20" class="txt"> <input type="submit" value="Go" class="btn">
+</form>
+</div>
+<div id="I_bar">
+<ul>
+<li><a href="/forum/">Forum</a></li>
+<li><a href="/forum/beginner/">Beginners</a></li>
+<li class="here">Turn hexadecimal strings to decimal inte</li>
+</ul>
+</div>
+<div id="I_user" class="C_LoginBox"><span title="ajax"></span></div>
+</div>
+</div>
+<div id="I_mid">
+<div id="I_wrap">
+<div id="I_minheight"></div>
+<div id="I_main">
+<div class="C_support">
+<div id='div-gpt-ad-1593433023017-0' style='width: 728px; height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1593433023017-0'); });
+  </script>
+</div>
+</div><div id="I_content">
+<h3><div class="C_ico question" title="question">&nbsp;</div> Turn hexadecimal strings to decimal integer value</h3><span id="CH_edttl"></span><span class="rootdatPost" title="261405,root,0,-1,8,0"></span><div id="CH_PostList"><div class="C_forPost" id="msg1131983"><span title="1131983,465885,1023,3,1"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1131983" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTm8cf76cbdb2" title="Tue, 03 Sep 2019 17:08:52 +0000"></span><script type="text/javascript">WhenId('CH_zTm8cf76cbdb2');</script><noscript>Sep 3, 2019 at 5:08pm UTC</noscript></div>
+<div class="dwho"><a href="/user/Eto/"><b>Eto</b> (3)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1131983">
+Write a function in C++ that receives a string containing a 32-bit hexadecimal integer.  The function must return the string's integer value in decimal form<br>
+<br>
+Do not call built-in library functions that accomplish these tasks automatically.<br>
+<br>
+<br>
+<br>
+// THis program basically turns a 32 bit hexadecimal string into the decimal integer value<br>
+// Ex: 01F12E0A = 32583178 or 00000012 = 18<br>
+<br>
+// Arturo Ramirez<br>
+#include &lt;iostream&gt;<br>
+#include &lt;cstring&gt;<br>
+#include &lt;string&gt;<br>
+using namespace std;<br>
+<br>
+int getDecimalForm(string);<br>
+<br>
+int main()<br>
+{<br>
+	//string binary;<br>
+	// Reads both 0 and B as int 48 while B should be<br>
+	string hexadecimal="01F12EBA";<br>
+	int decimalForm;<br>
+	int re = hexadecimal[0] , te = hexadecimal[1];<br>
+<br>
+<br>
+	/*cout &lt;&lt; "Input an eight digit binary string of 1s and 0s to find the integer value in decimal form:\n";<br>
+	cin &gt;&gt; binary;<br>
+<br>
+	// Input validation<br>
+	while (binary.size() != 8 || ((binary[0] != '0' &amp;&amp; binary[0] != '1')<br>
+		|| (binary[1] != '0' &amp;&amp; binary[1] != '1') || (binary[2] != '0' &amp;&amp; binary[2] != '1')<br>
+		|| (binary[3] != '0' &amp;&amp; binary[3] != '1') || (binary[4] != '0' &amp;&amp; binary[4] != '1')<br>
+		|| (binary[5] != '0' &amp;&amp; binary[5] != '1') || (binary[6] != '0' &amp;&amp; binary[6] != '1')<br>
+		|| (binary[7] != '0' &amp;&amp; binary[7] != '1')))<br>
+	{<br>
+		cout &lt;&lt; "Input a valid eight digit binary string of only ones and zeros\n";<br>
+		cin &gt;&gt; binary;<br>
+	}*/<br>
+<br>
+	cout &lt;&lt; "The 32-bit binary integer value is " &lt;&lt; hexadecimal &lt;&lt; endl;<br>
+	cout &lt;&lt; re &lt;&lt; "  " &lt;&lt; te &lt;&lt; " " &lt;&lt; hexadecimal[0] - 55 &lt;&lt; endl;<br>
+	decimalForm = getDecimalForm(hexadecimal);<br>
+<br>
+	cout &lt;&lt; endl &lt;&lt; decimalForm &lt;&lt; " is the same integer value expressed in decimal form";<br>
+}<br>
+<br>
+// a function in C++ that receives a string containing a 16 - bit binary integer<br>
+int getDecimalForm(string hStr)<br>
+{<br>
+	int value,<br>
+		num = 1,<br>
+		total = 0,<br>
+		exponent = 0;<br>
+<br>
+	// Made adding happen starting from the right side<br>
+	for (int i = (hStr.size() - 1); i &gt;= 0; i--)<br>
+	{<br>
+		if ('0' &lt;= hStr[i] &lt;= '9')<br>
+		{<br>
+			cout &lt;&lt; hStr[i] &lt;&lt; "  cat\n";<br>
+			if (exponent != 0)<br>
+			{<br>
+				for (int j = 0; j &lt; exponent; j++)<br>
+				{<br>
+					num *= 16;<br>
+				}<br>
+			}<br>
+			value = num * (hStr[i] - 48);<br>
+		}<br>
+<br>
+		if ('A' &lt;= hStr[i] &lt;= 'F')<br>
+		{<br>
+			cout &lt;&lt; hStr[i] &lt;&lt; "  dog\n";<br>
+			if (exponent != 0)<br>
+			{<br>
+				for (int j = 0; j &lt; exponent; j++)<br>
+				{<br>
+					num *= 16;<br>
+				}<br>
+			}<br>
+			value = num * (hStr[i] - 55);<br>
+		}<br>
+<br>
+		// Keep adding the value of the binary integer<br>
+		total += value;<br>
+<br>
+		num = 1;<br>
+		exponent++;<br>
+	}<br>
+<br>
+	return total;<br>
+}
+</div>
+<div class="dhow">
+<span class="sedited">Last edited on <span id="CH_zTm9026cd817f" title="Tue, 03 Sep 2019 17:11:49 +0000"></span><script type="text/javascript">WhenId('CH_zTm9026cd817f');</script><noscript>Sep 3, 2019 at 5:11pm UTC</noscript></span>
+<span class="dbtn" id="CH_btn1131983"></span>
+
+</div>
+</div>
+</div>
+<div class="C_forPost" id="msg1131984"><span title="1131984,465885,1023,3,0"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1131984" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTm2bed4d6319" title="Tue, 03 Sep 2019 17:11:39 +0000"></span><script type="text/javascript">WhenId('CH_zTm2bed4d6319');</script><noscript>Sep 3, 2019 at 5:11pm UTC</noscript></div>
+<div class="dwho"><a href="/user/Eto/"><b>Eto</b> (3)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1131984">
+Basically, I'm having trouble because the value for a char like 0 is also B because their value as an int is both 49 (which I though would be different. <br>
+
+</div>
+<div class="dhow">
+<span class="dbtn" id="CH_btn1131984"></span>
+
+</div>
+</div>
+</div>
+<div class="C_forPost" id="msg1131985"><span title="1131985,19724,5119,4483,0"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1131985" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTm27a2c5ce36" title="Tue, 03 Sep 2019 17:13:38 +0000"></span><script type="text/javascript">WhenId('CH_zTm27a2c5ce36');</script><noscript>Sep 3, 2019 at 5:13pm UTC</noscript></div>
+<div class="dwho"><a href="/user/Albatross/"><b>Albatross</b> (4483)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1131985">
+OP's code, formatted and put in the code blocks they deleted while making their post:<br>
+<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63<br>64<br>65<br>66<br>67<br>68<br>69<br>70<br>71<br>72<br>73<br>74<br></code></pre></td>
+<td class="source"><pre><code><dfn>#include&lt;iostream&gt;</dfn>
+<dfn>#include &lt;cstring&gt;</dfn>
+<dfn>#include &lt;string&gt;</dfn>
+<var>using</var> <var>namespace</var> std;
+
+<var>int</var> getDecimalForm(string);
+
+<var>int</var> main() {
+  <cite>// string binary;</cite>
+  <cite>// Reads both 0 and B as int 48 while B should be</cite>
+  string hexadecimal = <kbd>"01F12EBA"</kbd>;
+  <var>int</var> decimalForm;
+  <var>int</var> re = hexadecimal[0], te = hexadecimal[1];
+
+  <cite>/*cout &lt;&lt; "Input an eight digit binary string of 1s and 0s to find the integer
+  value in decimal form:\n"; cin &gt;&gt; binary;
+
+  // Input validation
+  while (binary.size() != 8 || ((binary[0] != '0' &amp;&amp; binary[0] != '1')
+  || (binary[1] != '0' &amp;&amp; binary[1] != '1') || (binary[2] != '0' &amp;&amp; binary[2] !=
+  '1')
+  || (binary[3] != '0' &amp;&amp; binary[3] != '1') || (binary[4] != '0' &amp;&amp; binary[4] !=
+  '1')
+  || (binary[5] != '0' &amp;&amp; binary[5] != '1') || (binary[6] != '0' &amp;&amp; binary[6] !=
+  '1')
+  || (binary[7] != '0' &amp;&amp; binary[7] != '1')))
+  {
+  cout &lt;&lt; "Input a valid eight digit binary string of only ones and zeros\n";
+  cin &gt;&gt; binary;
+  }*/</cite>
+
+  cout &lt;&lt; <kbd>"The 32-bit binary integer value is "</kbd> &lt;&lt; hexadecimal &lt;&lt; endl;
+  cout &lt;&lt; re &lt;&lt; <kbd>" "</kbd> &lt;&lt; te &lt;&lt; <kbd>" "</kbd> &lt;&lt; hexadecimal[0] - 55 &lt;&lt; endl;
+  decimalForm = getDecimalForm(hexadecimal);
+
+  cout &lt;&lt; endl
+       &lt;&lt; decimalForm &lt;&lt; <kbd>" is the same integer value expressed in decimal form"</kbd>;
+}
+
+<cite>// a function in C++ that receives a string containing a 16 - bit binary integer</cite>
+<var>int</var> getDecimalForm(string hStr) {
+  <var>int</var> value, num = 1, total = 0, exponent = 0;
+
+  <cite>// Made adding happen starting from the right side</cite>
+  <var>for</var> (<var>int</var> i = (hStr.size() - 1); i &gt;= 0; i--) {
+    <var>if</var> (<kbd>'0'</kbd> &lt;= hStr[i] &lt;= <kbd>'9'</kbd>) {
+      cout &lt;&lt; hStr[i] &lt;&lt; <kbd>" cat\n"</kbd>;
+      <var>if</var> (exponent != 0) {
+        <var>for</var> (<var>int</var> j = 0; j &lt; exponent; j++) {
+          num *= 16;
+        }
+      }
+      value = num * (hStr[i] - 48);
+    }
+
+    <var>if</var> (<kbd>'A'</kbd> &lt;= hStr[i] &lt;= <kbd>'F'</kbd>) {
+      cout &lt;&lt; hStr[i] &lt;&lt; <kbd>" dog\n"</kbd>;
+      <var>if</var> (exponent != 0) {
+        <var>for</var> (<var>int</var> j = 0; j &lt; exponent; j++) {
+          num *= 16;
+        }
+      }
+      value = num * (hStr[i] - 55);
+    }
+
+    <cite>// Keep adding the value of the binary integer</cite>
+    total += value;
+
+    num = 1;
+    exponent++;
+  }
+
+  <var>return</var> total;
+}</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+<br>
+<br>
+<del>You posted code, but haven't asked us a question about it. How would you like us to help you?</del><br>
+<br>
+EDIT: OP replied while I was drafting the post. Oops.<br>
+<br>
+You might find it helpful to write a function that converts characters into the hexadecimal numbers they represent. For instance, if it's between '0' and '9' inclusive, do the normal thing, but if it's between 'A' and 'F' after uppercasing, subtract 'A' and add 10. Something like that.<br>
+<br>
+Alternatively, some sort of associative structure (like std::map) would also work.<br>
+<br>
+-Albatross
+</div>
+<div class="dhow">
+<span class="sedited">Last edited on <span id="CH_zTm68d9318dd9" title="Tue, 03 Sep 2019 18:20:53 +0000"></span><script type="text/javascript">WhenId('CH_zTm68d9318dd9');</script><noscript>Sep 3, 2019 at 6:20pm UTC</noscript></span>
+<span class="dbtn" id="CH_btn1131985"></span>
+
+</div>
+</div>
+</div>
+<div class="C_forPost" id="msg1131993"><span title="1131993,116481,1023,4837,0"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1131993" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTm95cfb7f55b" title="Tue, 03 Sep 2019 17:49:33 +0000"></span><script type="text/javascript">WhenId('CH_zTm95cfb7f55b');</script><noscript>Sep 3, 2019 at 5:49pm UTC</noscript></div>
+<div class="dwho"><a href="/user/Ganado/"><b>Ganado</b> (4837)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1131993">
+<table class="quote"><tr><td class="qd">// THis program basically turns a 32 bit hexadecimal string into the decimal integer value<br>
+// Ex: 01F12E0A = 32583178 or 00000012 = 18</td></tr></table><br>
+<br>
+<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br></code></pre></td>
+<td class="source"><pre><code><cite>// Example program</cite>
+<dfn>#include &lt;iostream&gt;</dfn>
+<dfn>#include &lt;iomanip&gt;</dfn>
+<dfn>#include &lt;string&gt;</dfn>
+<dfn>#include &lt;sstream&gt;</dfn>
+
+<var>int</var> main()
+{
+    <var>using</var> <var>namespace</var> std;
+    cout &lt;&lt; <kbd>"Input hex digits: "</kbd>;
+    string hexstr;
+    cin &gt;&gt; hexstr;
+    
+    size_t dec;
+    stringstream ss;
+
+    ss &lt;&lt; std::hex &lt;&lt; hexstr;
+    <var>if</var> (ss &gt;&gt; dec)
+    {
+        cout &lt;&lt; dec &lt;&lt; <kbd>'\n'</kbd>;   
+    }
+    <var>else</var>
+    {
+        cout &lt;&lt; <kbd>"Could not convert hex to decimal\n"</kbd>;   
+    }
+}</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+<br>
+<div class="auto"><table class="snippet"><tr><td class="output"><pre><samp>Input: 01F12E0A
+32583178</samp></pre></td></tr></table></div>
+<div class="auto"><table class="snippet"><tr><td class="output"><pre><samp>Input: 00012
+18</samp></pre></td></tr></table></div>
+</div>
+<div class="dhow">
+<span class="sedited">Last edited on <span id="CH_zTmf5937cc9aa" title="Tue, 03 Sep 2019 17:53:04 +0000"></span><script type="text/javascript">WhenId('CH_zTmf5937cc9aa');</script><noscript>Sep 3, 2019 at 5:53pm UTC</noscript></span>
+<span class="dbtn" id="CH_btn1131993"></span>
+
+</div>
+</div>
+</div>
+<div class="C_forPost" id="msg1132007"><span title="1132007,252201,1023,4767,0"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1132007" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTm7ab5ef7b5b" title="Tue, 03 Sep 2019 19:08:16 +0000"></span><script type="text/javascript">WhenId('CH_zTm7ab5ef7b5b');</script><noscript>Sep 3, 2019 at 7:08pm UTC</noscript></div>
+<div class="dwho"><a href="/user/lastchance/"><b>lastchance</b> (4767)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1132007">
+<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br></code></pre></td>
+<td class="source"><pre><code><dfn>#include &lt;iostream&gt;</dfn>
+<dfn>#include &lt;string&gt;</dfn>
+<dfn>#include &lt;cctype&gt;</dfn>
+<var>using</var> <var>namespace</var> std;
+
+
+<var>unsigned</var> hexToInt( <var>const</var> string &amp;hex )
+{
+   <var>const</var> string legit = <kbd>"0123456789abcdefABCDEF"</kbd>;
+   <var>if</var> ( hex.size() == 0 || hex.size() &gt; 8 || hex.find_first_not_of( legit ) != string::npos )
+   {
+      cout &lt;&lt; <kbd>"Invalid hex string\n"</kbd>;
+      <var>return</var> 0;
+   }
+
+   <var>unsigned</var> result = 0;
+   <var>for</var> ( <var>char</var> c : hex ) result = 16 * result + ( isdigit( c ) ? c - <kbd>'0'</kbd> : 10 + toupper( c ) - <kbd>'A'</kbd> );
+   <var>return</var> result;
+}
+
+
+<var>int</var> main()
+{
+   string hex;
+   cout &lt;&lt; <kbd>"Enter a 32-bit hex string: "</kbd>;   cin &gt;&gt; hex;
+   cout &lt;&lt; hexToInt( hex );
+}</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+<br>
+<br>
+<div class="auto"><table class="snippet"><tr><td class="output"><pre><samp>Enter a 32-bit hex string: ABCDEF
+11259375</samp></pre></td></tr></table></div><br>
+<br>
+<div class="auto"><table class="snippet"><tr><td class="output"><pre><samp>Enter a 32-bit hex string: a1b2c3xy
+Invalid hex string
+0</samp></pre></td></tr></table></div><br>
+<br>
+<div class="auto"><table class="snippet"><tr><td class="output"><pre><samp>Enter a 32-bit hex string: 12345678
+305419896</samp></pre></td></tr></table></div>
+</div>
+<div class="dhow">
+<span class="dbtn" id="CH_btn1132007"></span>
+
+</div>
+</div>
+</div>
+<div class="C_forPost" id="msg1132017"><span title="1132017,9110,5119,12450,0"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1132017" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTmea82ee214b" title="Tue, 03 Sep 2019 21:44:48 +0000"></span><script type="text/javascript">WhenId('CH_zTmea82ee214b');</script><noscript>Sep 3, 2019 at 9:44pm UTC</noscript></div>
+<div class="dwho"><a href="/user/Duthomhas/"><b>Duthomhas</b> (12450)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1132017">
+BTW, I think you may have misread your assignment?<br>
+The instruction is to return an integer "in decimal form".<br>
+<br>
+Integers do not have hexadecimal, decimal, binary, etc form (called "radix"). [I]strings[/i] have radix.<br>
+<br>
+The conversion is made so much simpler by having a native integer value as an intermediary, but the output should (???) be a string.<br>
+<br>
+I would clarify with your professor whether he/she is looking for a hex-string-&gt;integer or hex-steing-&gt;dec-string conversion.
+</div>
+<div class="dhow">
+<span class="dbtn" id="CH_btn1132017"></span>
+
+</div>
+</div>
+</div>
+<div class="C_forPost" id="msg1132022"><span title="1132022,231935,1023,3783,0"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1132022" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTm24b56aea04" title="Wed, 04 Sep 2019 00:39:23 +0000"></span><script type="text/javascript">WhenId('CH_zTm24b56aea04');</script><noscript>Sep 4, 2019 at 12:39am UTC</noscript></div>
+<div class="dwho"><a href="/user/Handy_Andy/"><b>Handy Andy</b> (3783)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1132022">
+Hello Eto,<br>
+<table class="quote"><tr><td class="qd"><br>
+PLEASE ALWAYS USE CODE TAGS (the &lt;&gt; formatting button), to the right of this box, when posting code.<br>
+<br>
+<b><i>Along with the proper indenting</i></b> it makes it easier to read your code and also easier to respond to your post.<br>
+<br>
+<a href="http://www.cplusplus.com/articles/jEywvCM9/">http://www.cplusplus.com/articles/jEywvCM9/</a><br>
+<a href="http://www.cplusplus.com/articles/z13hAqkS/">http://www.cplusplus.com/articles/z13hAqkS/</a><br>
+<br>
+Hint: You can edit your post, highlight your code and press the &lt;&gt; formatting button.<br>
+You can use the preview button at the bottom to see how it looks.<br>
+<br>
+I found the second link to be the most help.<br>
+<br>
+</td></tr></table><br>
+I have been working with your program for awhile and found it does work, but needs a couple of tweaks.<br>
+<br>
+You have two if statements with the format of: <span class="auto"><code class="source"><var>if</var> (<kbd>'0'</kbd> &lt;= hStr[i] &lt;= <kbd>'9'</kbd>)</code></span>. This may look good on paper, but does not translate into code that works. For this I have most often seen and used:<br>
+<span class="auto"><code class="source"><var>if</var> (<kbd>'0'</kbd> &gt;= hStr[i] || hStr[i] &lt;= <kbd>'9'</kbd>)</code></span>. Notice the lhs of the (||) is (&gt;=) for both. Since you are looking for something between (0) and (9) or (A) and (F). As an example anything &lt; "A", i.e., between 33 and 64 dec. would be considered true. Then when you try to convert that into a decimal number it would be a problem.<br>
+<br>
+In the function "getDecimalForm" I found that the two if statements worked better as an if/else if statement.<br>
+<br>
+After you define your variables, in main, you might want to consider something like this:<br>
+<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br></code></pre></td>
+<td class="source"><pre><code>cout &lt;&lt; <kbd>"\n Input 8 hex numbers (12A45F78): "</kbd>;
+
+<var>while</var> (cin &gt;&gt; hexadecimal &amp;&amp; hexadecimal.size() != 8)
+{
+	std::cout &lt;&lt; <kbd>"\n    Invalid hex number!\n    Must be 8 characters."</kbd> &lt;&lt; std::endl;
+
+	std::cout &lt;&lt; <kbd>"\n Input 8 hex numbers (12A45F78): "</kbd>;
+}</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+<br>
+The "cout" statements can be changed to anything that you like.<br>
+<br>
+What you have set up now is a great way of testing the program, but eventually you will need to input and verify the string. You may also want to verify that each element of the string is a digit or the letters "A" - "F". I have not worked on this yet, but what I have in mind may streach the "Do not call built-in library functions that accomplish these tasks automatically.", but since it is not part of converting the number it might work. I was thinking of using the header file "&lt;cctype&gt;" and the function "isdigit()".  There is also "std::toupper()" to make sure that the letters are in upper case. Just a thought for now.<br>
+<br>
+<br>
+Hope that helps,<br>
+<br>
+Andy
+</div>
+<div class="dhow">
+<span class="dbtn" id="CH_btn1132022"></span>
+
+</div>
+</div>
+</div>
+<div class="C_forPost" id="msg1132028"><span title="1132028,270727,1023,7598,0"></span>
+<div class="box">
+<div class="boxtop">
+<div class="dwhen"><a href="#msg1132028" title="Link to this post"><img src="/img/link.png" width="16" height="8"></a> <span id="CH_zTm0881a81b6f" title="Wed, 04 Sep 2019 01:45:38 +0000"></span><script type="text/javascript">WhenId('CH_zTm0881a81b6f');</script><noscript>Sep 4, 2019 at 1:45am UTC</noscript></div>
+<div class="dwho"><a href="/user/jonnin/"><b>jonnin</b> (7598)</a></div>
+</div>
+<div class="dwhat" colspan="2" id="CH_i1132028">
+hex has a direct conversion to binary, so you can digit by digit do a lookup table (size = 15, per nibble) to craft a binary integer which can then be printed in any format you like.  I believe this is about as small / simple as it gets assuming your inputs fit into integers without having to go get a big integer library or cook up something for that.   But here again, the assignment is a little fuzzy on what you really want.   This is sort of what lastchance did, except he computes it. 
+</div>
+<div class="dhow">
+<span class="dbtn" id="CH_btn1132028"></span>
+
+</div>
+</div>
+</div>
+</div><div class="rootinsMore"></div><div class="rootbtnMore"></div><div class="rootinsNew"></div><div class="rootbtnNew"></div><div id="CH_insNew"></div><div id="CH_reply">Topic archived. No new replies allowed.</div><div id="CH_subscription"></div><div class="rootedtNew"></div><script type="text/javascript">new for_PostList(261405,1,465885,0,'CH_PostList','CH_subscription','CH_reply','CH_insNew','CH_edttl','/forum/thread.cgi','/forum/post.cgi','/forum/myposts.cgi',64,32,512,256,1024,16);</script></div>
+<div class="C_support">
+<div id='div-gpt-ad-1593433023017-0' style='width: 728px; height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1593433023017-0'); });
+  </script>
+</div>
+</div></div>
+<div id="I_nav">
+<div class="sect root">
+<h3><b><a href="/">C++</a></b></h3>
+<ul>
+<li class="folder info"><a href="/info/">Information</a></li>
+<li class="folder doc"><a href="/doc/">Tutorials</a></li>
+<li class="folder reference"><a href="/reference/">Reference</a></li>
+<li class="folder articles"><a href="/articles/">Articles</a></li>
+<li class="folder selected forum"><a href="/forum/">Forum</a></li>
+</ul>
+</div>
+<div class="sect">
+<h3><b><a href="/forum/">Forum</a></b></h3>
+<ul>
+<li class="selected"><a href="/forum/beginner/"><b>Beginners</b></a></li><li><a href="/forum/windows/"><b>Windows Programming</b></a></li><li><a href="/forum/unices/"><b>UNIX/Linux Programming</b></a></li><li><a href="/forum/general/"><b>General C++ Programming</b></a></li><li><a href="/forum/lounge/"><b>Lounge</b></a></li><li><a href="/forum/jobs/"><b>Jobs</b></a></li></ul>
+</div>
+<div id="I_subnav"></div>
+<div class="C_ad234">
+<div id='cplusplus.com_234x120_sidebar_1'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('cplusplus.com_234x120_sidebar_1'); });
+  </script>
+</div>
+</div></div>
+<div id="I_midclear"></div>
+</div>
+</div>
+<div id="I_bottom">
+<div id="I_footer">
+	<a href="/">Home page</a> | <a href="/privacy.do">Privacy policy</a><br>&copy; cplusplus.com, 2000-2020 - All rights reserved - <i>v3.2</i><br><a href="/contact.do?referrer=cplusplus.com%2Fforum%2Fbeginner%2F261405%2F">Spotted an error? contact us</a>
+</div>
+</div>
+
+<script type="text/javascript">
+<!--
+function NavFor(us) {document.getElementById('I_subnav').innerHTML=us.ok?'<div class="sect"><h3><b><a href="/user/">'+us.user+'</a></b></h3><ul><li><a href="/forum/myposts.cgi">My topics</a></li></ul></div>':'';}onSession(NavFor);ready();
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-521783-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+//-->
+</script>
+
+<script>
+(function(){
+  // mini cookie-consent code (c) Juan Soulie, 2016
+  var s ='consent=cookie';
+  var e = document.createElement('div');
+  e.innerHTML = '<div style="background:#eed;padding:10px;margin:0;text-align:center;border-bottom:1px solid #446"><span style="color:#210;font-weight:bold">This website uses cookies. By continuing, you give permission to deploy cookies, as detailed in our <a href="/privacy.do">privacy policy</a>.</span> <span style="margin-left:10px;border-radius:5px;padding:1px 10px;background:#bcd;border:1px solid #789;cursor:pointer">ok</span></div>';
+  if (document.cookie.indexOf(s)!==-1) return;
+  var b = document.getElementsByTagName('body')[0];
+  b.insertBefore(e,b.firstChild);
+  var x = function() { document.cookie = s+'; path=/'; e.parentNode.removeChild(e); };
+  e.addEventListener('click',x);
+  document.addEventListener('scroll',x);
+})();
+</script>
+
+</body>
+</html>Ž8çæ…      _M·„_M·ÊB5j_Vò   ,    :http://cplusplus.com/forum/beginner/261405/ necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 01 Sep 2020 02:52:52 GMT
+Server: Apache/2.4.6
+Last-Modified: Wed, 04 Sep 2019 01:45:38 GMT
+ETag: 1567561538
+Content-Type: text/html; charset=UTF-8
+ original-response-headers Date: Tue, 01 Sep 2020 02:52:52 GMT
+Server: Apache/2.4.6
+Set-Cookie: vis31=0003fd1d5f4db784; path=/
+Last-Modified: Wed, 04 Sep 2019 01:45:38 GMT
+ETag: 1567561538
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+ ctid 1 uncompressed-len 0 predictor::resource-count 30 predictor::http://cplusplus.com/v322/main.css 1,1,1598928772,4097 predictor::http://cplusplus.com/v322/main.js 1,1,1598928772,4097 predictor::https://securepubads.g.doubleclick.net/tag/js/gpt.js 1,1,1598928772,4096 predictor::https://cloud.setupad.com/hb/cpluspluscom.js 1,1,1598928772,4096 predictor::http://cplusplus.com/img/link.png 1,1,1598928772,4097 net-response-time-onstart 119 net-response-time-onstop 211 predictor::http://cplusplus.com/v322/bgv.png 1,1,1598928772,4096 predictor::http://cplusplus.com/v322/bg.png 1,1,1598928772,4096 predictor::http://cplusplus.com/v322/bgh.png 1,1,1598928772,4096 predictor::http://www.google-analytics.com/ga.js 1,1,1598928772,4096 predictor::https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020082701.js 1,1,1598928772,4096 predictor::http://c.amazon-adsystem.com/aax2/apstag.js 1,1,1598928772,4096 predictor::https://adservice.google.com/adsid/integrator.js?domain=cplusplus.com 1,1,1598928772,4096 predictor::https://static.criteo.net/js/ld/publishertag.prebid.js 1,1,1598928772,4096 predictor::https://cdn.ampproject.org/rtv/012008242301000/amp4ads-v0.js 1,1,1598928772,4096 predictor::https://cdn.ampproject.org/rtv/012008242301000/v0/amp-ad-exit-0.1.js 1,1,1598928772,4096 predictor::https://cdn.ampproject.org/rtv/012008242301000/v0/amp-analytics-0.1.js 1,1,1598928772,4096 predictor::https://cdn.ampproject.org/rtv/012008242301000/v0/amp-fit-text-0.1.js 1,1,1598928772,4096 predictor::https://cdn.ampproject.org/rtv/012008242301000/v0/amp-form-0.1.js 1,1,1598928772,4096 predictor::https://tpc.googlesyndication.com/simgad/11862693993149384608?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qkvclN1lcwiZHQAPhL9ERXKXt3lGQ 1,1,1598928772,4096 predictor::https://tpc.googlesyndication.com/pagead/images/adchoices/en.png 1,1,1598928772,4096 predictor::https://tpc.googlesyndication.com/pagead/images/adchoices/icon.png 1,1,1598928772,4096 predictor::http://www.google.com/ads/measurement/l?ebcid=ALh7CaRwjp4YrlNlBzYFHf5x1DHFs7h_B2MCUG8o0u3X0Pfj3Z1Tw-V5DqwcBTrktyP35SUD8b_m 1,1,1598928772,4096 predictor::https://fonts.googleapis.com/css?family=Google%20Sans%3A400%2C500 1,1,1598928772,4096 predictor::https://tpc.googlesyndication.com/pagead/images/adchoices/en_bl.png 1,1,1598928772,4096 predictor::http://www.google.com/ads/measurement/l?ebcid=ALh7CaQ-pySyi8c4nMlpWVtnTm9XTrsGMbpcdRXtUrINYZMemfcjD9Qe67qIP8Tfv35aKj3EAf8X 1,1,1598928772,4096 predictor::https://ad.doubleclick.net/ddm/trackimp/N718679.3159GOOGLE/B23595838.269557032;dc_trk_aid=464145334;dc_trk_cid=129774135;ord=2000201763;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=? 1,1,1598928772,4096 predictor::http://www.google.com/pagead/drt/ui 1,1,1598928772,4096 predictor::https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2 1,1,1598928772,4096 predictor::https://fonts.gstatic.com/s/googlesans/v16/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2 1,1,1598928772,4096 predictor::https://tpc.googlesyndication.com/sodar/sodar2.js 1,1,1598928772,4096   g2

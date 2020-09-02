@@ -1,0 +1,67 @@
+{
+  "Version": "18.04",
+  "OEM": {
+    "Vendor": "Dell Inc.",
+    "Product": "Precision Tower 5810"
+  },
+  "BIOS": {
+    "Vendor": "Dell Inc.",
+    "Version": "A15"
+  },
+  "CPU": [
+    {
+      "Vendor": "GenuineIntel",
+      "Family": "6",
+      "Model": "63",
+      "Stepping": "2"
+    }
+  ],
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "10de",
+      "Model": "107d"
+    }
+  ],
+  "RAM": 8.1,
+  "Partitions": [
+    479.2,
+    0.5,
+    976.8
+  ],
+  "Screens": [
+    {
+      "Resolution": "1920x1080",
+      "Frequency": "60.00"
+    }
+  ],
+  "Autologin": true,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Timezone": "America/Los_Angeles",
+  "Install": {
+    "Media": "Ubuntu 18.04 LTS \"Bionic Beaver\" - Release amd64 (20180426)",
+    "Type": "GTK",
+    "PartitionMethod": "use_device",
+    "DownloadUpdates": true,
+    "Language": "en",
+    "Minimal": false,
+    "RestrictedAddons": false,
+    "Stages": {
+      "0": "language",
+      "4": "language",
+      "111": "console_setup",
+      "114": "prepare",
+      "126": "partman",
+      "151": "start_install",
+      "157": "timezone",
+      "162": "usersetup",
+      "185": "user_done",
+      "1154": "done"
+    }
+  }
+}
